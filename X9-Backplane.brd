@@ -8,7 +8,7 @@
 </settings>
 <grid distance="1" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
 <layers>
-<layer number="1" name="Top" color="4" fill="1" visible="no" active="yes"/>
+<layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="yes"/>
 <layer number="3" name="Route3" color="4" fill="3" visible="no" active="yes"/>
 <layer number="4" name="Route4" color="1" fill="4" visible="no" active="yes"/>
@@ -23,7 +23,7 @@
 <layer number="13" name="Route13" color="4" fill="5" visible="no" active="yes"/>
 <layer number="14" name="Route14" color="1" fill="6" visible="no" active="yes"/>
 <layer number="15" name="Route15" color="4" fill="6" visible="no" active="yes"/>
-<layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
+<layer number="16" name="Bottom" color="1" fill="1" visible="no" active="yes"/>
 <layer number="17" name="Pads" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="18" name="Vias" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="yes"/>
@@ -1028,10 +1028,10 @@ Created by Nick Molo for the Purdue IEEE ROV Team
 <contactref element="U$1" pad="51"/>
 <contactref element="BT_POWER" pad="4"/>
 <wire x1="118.76" y1="26.43" x2="116.22" y2="26.43" width="0.8128" layer="16"/>
-<wire x1="30.4172" y1="42.1294" x2="42.4018" y2="42.1294" width="0.8128" layer="1"/>
-<wire x1="42.4018" y1="42.1294" x2="58.1914" y2="26.3398" width="0.8128" layer="1"/>
-<wire x1="58.1914" y1="26.3398" x2="116.1298" y2="26.3398" width="0.8128" layer="1"/>
-<wire x1="116.1298" y1="26.3398" x2="116.22" y2="26.43" width="0.8128" layer="1"/>
+<wire x1="30.4172" y1="42.1294" x2="41.8706" y2="42.1294" width="0.8128" layer="1"/>
+<wire x1="41.8706" y1="42.1294" x2="59" y2="25" width="0.8128" layer="1"/>
+<wire x1="59" y1="25" x2="114.79" y2="25" width="0.8128" layer="1"/>
+<wire x1="114.79" y1="25" x2="116.22" y2="26.43" width="0.8128" layer="1"/>
 </signal>
 </signals>
 </board>
