@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="1" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
+<grid distance="1" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="yes"/>
@@ -157,22 +157,25 @@
 <hole x="98.616953125" y="-1.084509375" drill="3.2"/>
 <hole x="98.616953125" y="75.247665625" drill="3.2"/>
 <circle x="60.45086875" y="37.08158125" radius="73.025" width="0.4064" layer="51"/>
-<wire x1="35.30615" y1="98.14731875" x2="-0.614875" y2="62.22629375" width="0.4064" layer="20"/>
-<wire x1="121.51660625" y1="11.9368625" x2="99.195584375" y2="-10.2841625" width="0.4064" layer="20"/>
-<wire x1="-0.614875" y1="11.9368625" x2="21.30615" y2="-9.9841625" width="0.4064" layer="20"/>
-<wire x1="85.595584375" y1="98.14731875" x2="121.51660625" y2="62.22629375" width="0.4064" layer="20"/>
-<wire x1="85.595584375" y1="98.14731875" x2="35.30615" y2="98.14731875" width="0.4064" layer="20"/>
+<wire x1="24.30615" y1="87.14731875" x2="-0.614875" y2="62.22629375" width="0.4064" layer="20"/>
+<wire x1="121.51660625" y1="11.9368625" x2="102.827784375" y2="-6.6519625" width="0.4064" layer="20"/>
+<wire x1="-0.614875" y1="11.9368625" x2="17.87715" y2="-6.6567625" width="0.4064" layer="20"/>
+<wire x1="96.595584375" y1="87.14731875" x2="121.51660625" y2="62.22629375" width="0.4064" layer="20"/>
 <wire x1="-0.614875" y1="62.22629375" x2="-0.614875" y2="11.9368625" width="0.4064" layer="20"/>
 <text x="80.1" y="70.4" size="1.778" layer="22" rot="MR0">MAIN_POWER</text>
 <text x="98.8" y="72.9" size="1.778" layer="22" rot="MR0">MAIN_POWER</text>
 <wire x1="121.485125" y1="62.42629375" x2="121.485125" y2="12.1368625" width="0.4064" layer="20"/>
-<text x="33.9" y="36.3" size="1.778" layer="16" rot="MR0">BT_POWER</text>
-<text x="27.6" y="14.5" size="1.778" layer="16" rot="MR0">BT_SIGNAL</text>
-<text x="69.881" y="25.9566" size="1.778" layer="16" rot="MR0">CAMPOW</text>
-<text x="70.4" y="12.7" size="1.778" layer="16" rot="MR0">CAMDATA</text>
-<text x="71.2" y="77.4" size="1.778" layer="16" rot="MR0">PS</text>
-<text x="41.2954" y="78.4302" size="1.778" layer="16" rot="MR0">S_PIEZO</text>
-<text x="97.7" y="11.4" size="1.778" layer="16" rot="MR0">SC</text>
+<text x="33.9" y="36.3" size="1.778" layer="22" rot="MR0">BT_POWER</text>
+<text x="27.6" y="14.5" size="1.778" layer="22" rot="MR0">BT_SIGNAL</text>
+<text x="69.881" y="25.9566" size="1.778" layer="22" rot="MR0">CAMPOW</text>
+<text x="70.4" y="12.7" size="1.778" layer="22" rot="MR0">CAMDATA</text>
+<text x="71.2" y="77.4" size="1.778" layer="22" rot="MR0">PS</text>
+<text x="41.2954" y="78.4302" size="1.778" layer="22" rot="MR0">S_PIEZO</text>
+<text x="97.7" y="11.4" size="1.778" layer="22" rot="MR0">SC</text>
+<wire x1="96.595584375" y1="87.14731875" x2="24.30615" y2="87.14731875" width="0.4064" layer="20"/>
+<wire x1="28.496384375" y1="-6.70388125" x2="17.95795" y2="-6.70388125" width="0.4064" layer="20"/>
+<wire x1="102.791384375" y1="-6.67848125" x2="93.90395" y2="-6.70388125" width="0.4064" layer="20"/>
+<wire x1="28.4988" y1="-6.6802" x2="93.8784" y2="-6.6802" width="0.4064" layer="20" curve="-61.297013"/>
 </plain>
 <libraries>
 <library name="T2I5P">
@@ -721,7 +724,7 @@ Created by Nick Molo for the Purdue IEEE ROV Team
 <element name="BT_SIGNAL" library="BACKPLANE" package="T2I" value="T2I" x="20.349" y="30.861" rot="R270"/>
 <element name="BT_POWER" library="BACKPLANE" package="T2I" value="T2I" x="27.6172" y="56.2294" rot="R270"/>
 <element name="U$1" library="backplane_to_shield_connector" package="20X2PIN" value="SHIELDCONNECTOR" x="57.8" y="40.4"/>
-<element name="JP1" library="pinhead" package="1X02" value="" x="62.784" y="4.8726" rot="R180"/>
+<element name="JP1" library="pinhead" package="1X02" value="" x="62.9618" y="6.1426" rot="R180"/>
 </elements>
 <signals>
 <signal name="N$3">
@@ -765,8 +768,8 @@ Created by Nick Molo for the Purdue IEEE ROV Team
 <vertex x="35.306" y="98.298"/>
 <vertex x="89.4158" y="101.6126"/>
 <vertex x="124.3838" y="64.7446"/>
-<vertex x="121.666" y="11.938"/>
-<vertex x="85.598" y="-24.13"/>
+<vertex x="121.9454" y="11.7602"/>
+<vertex x="85.8774" y="-24.3078"/>
 <vertex x="35.306" y="-24.13"/>
 <vertex x="-0.762" y="11.938"/>
 <vertex x="-0.762" y="62.23"/>
@@ -817,14 +820,14 @@ Created by Nick Molo for the Purdue IEEE ROV Team
 <signal name="D+">
 <contactref element="CAMDATA" pad="1"/>
 <contactref element="JP1" pad="1"/>
-<wire x1="63.843" y1="12.2232" x2="63.843" y2="5.0836" width="0.3048" layer="16"/>
-<wire x1="63.843" y1="5.0836" x2="64.054" y2="4.8726" width="0.3048" layer="16"/>
+<wire x1="63.843" y1="12.2232" x2="63.843" y2="7.2426" width="0.3048" layer="16"/>
+<wire x1="63.843" y1="7.2426" x2="64.2318" y2="6.1426" width="0.3048" layer="16"/>
 </signal>
 <signal name="D-">
 <contactref element="CAMDATA" pad="2"/>
 <contactref element="JP1" pad="2"/>
-<wire x1="61.843" y1="12.2232" x2="61.843" y2="5.2016" width="0.3048" layer="16"/>
-<wire x1="61.843" y1="5.2016" x2="61.514" y2="4.8726" width="0.3048" layer="16"/>
+<wire x1="61.843" y1="12.2232" x2="61.843" y2="6.4716" width="0.3048" layer="16"/>
+<wire x1="61.843" y1="6.4716" x2="61.6918" y2="6.1426" width="0.3048" layer="16"/>
 </signal>
 <signal name="5V_LED">
 <contactref element="CAMDATA" pad="3"/>
@@ -965,7 +968,6 @@ Created by Nick Molo for the Purdue IEEE ROV Team
 <wire x1="116.0562" y1="39.2938" x2="116.22" y2="39.13" width="0.8128" layer="16"/>
 </signal>
 <signal name="N$21">
-<wire x1="21.4" y1="-10" x2="99.2" y2="-10.5" width="0.4064" layer="16" curve="-63.42779"/>
 </signal>
 <signal name="DSDAP">
 <contactref element="U$1" pad="37"/>
