@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="1" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
+<grid distance="1" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="yes"/>
@@ -23,7 +23,7 @@
 <layer number="13" name="Route13" color="4" fill="5" visible="no" active="yes"/>
 <layer number="14" name="Route14" color="1" fill="6" visible="no" active="yes"/>
 <layer number="15" name="Route15" color="4" fill="6" visible="no" active="yes"/>
-<layer number="16" name="Bottom" color="1" fill="1" visible="no" active="yes"/>
+<layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
 <layer number="17" name="Pads" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="18" name="Vias" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="yes"/>
@@ -162,14 +162,13 @@
 <wire x1="-0.614875" y1="11.9368625" x2="17.87715" y2="-6.6567625" width="0.4064" layer="20"/>
 <wire x1="96.595584375" y1="87.14731875" x2="121.51660625" y2="62.22629375" width="0.4064" layer="20"/>
 <wire x1="-0.614875" y1="62.22629375" x2="-0.614875" y2="11.9368625" width="0.4064" layer="20"/>
-<text x="80.1" y="70.4" size="1.778" layer="22" rot="MR0">MAIN_POWER</text>
-<text x="98.8" y="72.9" size="1.778" layer="22" rot="MR0">MAIN_POWER</text>
+<text x="84.1" y="63.4" size="1.778" layer="22" rot="MR0">MAIN_POWER</text>
+<text x="103.8" y="63.9" size="1.778" layer="22" rot="MR0">MAIN_POWER</text>
 <wire x1="121.485125" y1="62.42629375" x2="121.485125" y2="12.1368625" width="0.4064" layer="20"/>
-<text x="33.9" y="36.3" size="1.778" layer="22" rot="MR0">BT_POWER</text>
-<text x="27.6" y="14.5" size="1.778" layer="22" rot="MR0">BT_SIGNAL</text>
+<text x="41.8248" y="27.3338" size="1.778" layer="22" rot="MR0">BT_POWER</text>
+<text x="22.5962" y="27.0222" size="1.778" layer="22" rot="MR0">BT_SIGNAL</text>
 <text x="69.881" y="25.9566" size="1.778" layer="22" rot="MR0">CAMPOW</text>
 <text x="70.4" y="12.7" size="1.778" layer="22" rot="MR0">CAMDATA</text>
-<text x="71.2" y="77.4" size="1.778" layer="22" rot="MR0">PS</text>
 <text x="41.2954" y="78.4302" size="1.778" layer="22" rot="MR0">S_PIEZO</text>
 <text x="97.7" y="11.4" size="1.778" layer="22" rot="MR0">SC</text>
 <wire x1="96.595584375" y1="87.14731875" x2="24.30615" y2="87.14731875" width="0.4064" layer="20"/>
@@ -533,6 +532,45 @@
 </package>
 </packages>
 </library>
+<library name="con-hirose-df13">
+<description>&lt;b&gt;Hirose DF13 Series.&lt;/b&gt;&lt;p&gt;
+
+1.25mm Pitch Miniature Crimping Connector.&lt;p&gt;
+Source: &lt;a href="http://www.hirose.co.jp/cataloge_hp/e53600014.pdf"&gt;http://www.hirose.co.jp/cataloge_hp/e53600014.pdf&lt;/a&gt;&lt;p&gt;
+
+&lt;author&gt;Created by Dmitriy Ivashin (divashin@gmail.com)&lt;/author&gt;</description>
+<packages>
+<package name="DF13-4P-1.25DSA">
+<description>Single Row Straight Pin Header (Through hole)</description>
+<wire x1="-3.325" y1="-2.19" x2="3.325" y2="-2.19" width="0.3048" layer="21"/>
+<wire x1="-3.325" y1="1.21" x2="3.325" y2="1.21" width="0.3048" layer="21"/>
+<wire x1="-3.325" y1="1.21" x2="-3.325" y2="0" width="0.3048" layer="21"/>
+<wire x1="-3.325" y1="0" x2="-3.325" y2="-0.81" width="0.3048" layer="21"/>
+<wire x1="-3.325" y1="-0.81" x2="-3.325" y2="-2.19" width="0.3048" layer="21"/>
+<wire x1="3.325" y1="-2.19" x2="3.325" y2="-0.81" width="0.3048" layer="21"/>
+<wire x1="3.325" y1="-0.81" x2="3.325" y2="0" width="0.3048" layer="21"/>
+<wire x1="3.325" y1="0" x2="3.325" y2="1.21" width="0.3048" layer="21"/>
+<wire x1="-2.825" y1="-1.59" x2="2.825" y2="-1.59" width="0.127" layer="21"/>
+<wire x1="-2.825" y1="0.81" x2="-2.825" y2="0" width="0.127" layer="21"/>
+<wire x1="-2.825" y1="0" x2="-2.825" y2="-0.81" width="0.1" layer="21"/>
+<wire x1="-2.825" y1="-0.81" x2="-2.825" y2="-1.59" width="0.127" layer="21"/>
+<wire x1="2.825" y1="0.81" x2="2.825" y2="0" width="0.127" layer="21"/>
+<wire x1="2.825" y1="0" x2="2.825" y2="-0.81" width="0.1" layer="21"/>
+<wire x1="2.825" y1="-0.81" x2="2.825" y2="-1.59" width="0.127" layer="21"/>
+<wire x1="-2.825" y1="0.81" x2="2.825" y2="0.81" width="0.127" layer="21"/>
+<wire x1="-3.325" y1="0" x2="-2.825" y2="0" width="0.127" layer="21"/>
+<wire x1="2.825" y1="0" x2="3.325" y2="0" width="0.127" layer="21"/>
+<wire x1="-3.325" y1="-0.81" x2="-2.825" y2="-0.81" width="0.127" layer="21"/>
+<wire x1="2.825" y1="-0.81" x2="3.325" y2="-0.81" width="0.127" layer="21"/>
+<pad name="P$1" x="1.875" y="0" drill="0.6" diameter="1.016" shape="square"/>
+<pad name="P$2" x="0.625" y="0" drill="0.6" diameter="1.016"/>
+<pad name="P$3" x="-0.625" y="0" drill="0.6" diameter="1.016"/>
+<pad name="P$4" x="-1.875" y="0" drill="0.6" diameter="1.016"/>
+<text x="-3.125" y="1.875" size="1.27" layer="25">&gt;NAME</text>
+<text x="-3.125" y="-3.75" size="1.27" layer="27">&gt;VALUE</text>
+</package>
+</packages>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -542,33 +580,37 @@
 <class number="0" name="default" width="0" drill="0">
 </class>
 </classes>
-<designrules name="GoldPhoenix">
-<description language="en">
-
-&lt;b&gt;Gold Phoenix PCB Design Rules&lt;/b&gt;
+<designrules name="LaenPCBOrder">
+<description language="de">&lt;b&gt;EAGLE Design Rules&lt;/b&gt;
 &lt;p&gt;
-Created by Nick Molo for the Purdue IEEE ROV Team
-</description>
+Die Standard-Design-Rules sind so gewählt, dass sie für 
+die meisten Anwendungen passen. Sollte ihre Platine 
+besondere Anforderungen haben, treffen Sie die erforderlichen
+Einstellungen hier und speichern die Design Rules unter 
+einem neuen Namen ab.</description>
+<description language="en">&lt;b&gt;Laen's PCB Order Design Rules&lt;/b&gt;
+&lt;p&gt;
+Please make sure your boards conform to these design rules.</description>
 <param name="layerSetup" value="(1*16)"/>
-<param name="mtCopper" value="0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm"/>
-<param name="mtIsolate" value="1.5mm 0.15mm 0.2mm 0.15mm 0.2mm 0.15mm 0.2mm 0.15mm 0.2mm 0.15mm 0.2mm 0.15mm 0.2mm 0.15mm 0.2mm"/>
-<param name="mdWireWire" value="7mil"/>
-<param name="mdWirePad" value="7mil"/>
-<param name="mdWireVia" value="7mil"/>
-<param name="mdPadPad" value="7mil"/>
-<param name="mdPadVia" value="7mil"/>
-<param name="mdViaVia" value="7mil"/>
-<param name="mdSmdPad" value="7mil"/>
-<param name="mdSmdVia" value="7mil"/>
-<param name="mdSmdSmd" value="7mil"/>
+<param name="mtCopper" value="0.0356mm 0.0356mm 0.0356mm 0.0356mm 0.0356mm 0.0356mm 0.0356mm 0.0356mm 0.0356mm 0.0356mm 0.0356mm 0.0356mm 0.0356mm 0.0356mm 0.0356mm 0.0356mm"/>
+<param name="mtIsolate" value="1.5011mm 0.1499mm 0.2007mm 0.1499mm 0.2007mm 0.1499mm 0.2007mm 0.1499mm 0.2007mm 0.1499mm 0.2007mm 0.1499mm 0.2007mm 0.1499mm 0.2007mm"/>
+<param name="mdWireWire" value="6mil"/>
+<param name="mdWirePad" value="6mil"/>
+<param name="mdWireVia" value="6mil"/>
+<param name="mdPadPad" value="6mil"/>
+<param name="mdPadVia" value="6mil"/>
+<param name="mdViaVia" value="6mil"/>
+<param name="mdSmdPad" value="6mil"/>
+<param name="mdSmdVia" value="6mil"/>
+<param name="mdSmdSmd" value="6mil"/>
 <param name="mdViaViaSameLayer" value="8mil"/>
 <param name="mnLayersViaInSmd" value="2"/>
-<param name="mdCopperDimension" value="10mil"/>
-<param name="mdDrill" value="8mil"/>
+<param name="mdCopperDimension" value="15mil"/>
+<param name="mdDrill" value="6mil"/>
 <param name="mdSmdStop" value="0mil"/>
-<param name="msWidth" value="7mil"/>
-<param name="msDrill" value="10mil"/>
-<param name="msMicroVia" value="9.99mm"/>
+<param name="msWidth" value="6mil"/>
+<param name="msDrill" value="13mil"/>
+<param name="msMicroVia" value="13mil"/>
 <param name="msBlindViaRatio" value="0.5"/>
 <param name="rvPadTop" value="0.25"/>
 <param name="rvPadInner" value="0.25"/>
@@ -577,15 +619,15 @@ Created by Nick Molo for the Purdue IEEE ROV Team
 <param name="rvViaInner" value="0.25"/>
 <param name="rvMicroViaOuter" value="0.25"/>
 <param name="rvMicroViaInner" value="0.25"/>
-<param name="rlMinPadTop" value="10mil"/>
+<param name="rlMinPadTop" value="7mil"/>
 <param name="rlMaxPadTop" value="20mil"/>
-<param name="rlMinPadInner" value="10mil"/>
+<param name="rlMinPadInner" value="7mil"/>
 <param name="rlMaxPadInner" value="20mil"/>
-<param name="rlMinPadBottom" value="10mil"/>
+<param name="rlMinPadBottom" value="7mil"/>
 <param name="rlMaxPadBottom" value="20mil"/>
-<param name="rlMinViaOuter" value="10mil"/>
+<param name="rlMinViaOuter" value="7mil"/>
 <param name="rlMaxViaOuter" value="20mil"/>
-<param name="rlMinViaInner" value="10mil"/>
+<param name="rlMinViaInner" value="7mil"/>
 <param name="rlMaxViaInner" value="20mil"/>
 <param name="rlMinMicroViaOuter" value="4mil"/>
 <param name="rlMaxMicroViaOuter" value="20mil"/>
@@ -598,11 +640,11 @@ Created by Nick Molo for the Purdue IEEE ROV Team
 <param name="psElongationOffset" value="100"/>
 <param name="mvStopFrame" value="1"/>
 <param name="mvCreamFrame" value="0"/>
-<param name="mlMinStopFrame" value="4mil"/>
-<param name="mlMaxStopFrame" value="4mil"/>
+<param name="mlMinStopFrame" value="3mil"/>
+<param name="mlMaxStopFrame" value="3mil"/>
 <param name="mlMinCreamFrame" value="0mil"/>
 <param name="mlMaxCreamFrame" value="0mil"/>
-<param name="mlViaStopLimit" value="25mil"/>
+<param name="mlViaStopLimit" value="0mil"/>
 <param name="srRoundness" value="0"/>
 <param name="srMinRoundness" value="0mil"/>
 <param name="srMaxRoundness" value="0mil"/>
@@ -719,12 +761,12 @@ Created by Nick Molo for the Purdue IEEE ROV Team
 <element name="CAMPOW" library="BACKPLANE" package="T2I" value="T2I" x="58.138" y="44.5692" rot="R270"/>
 <element name="SC" library="BACKPLANE" package="T2I" value="T2I" x="89.9" y="30.861" rot="R270"/>
 <element name="S_PIEZO" library="BACKPLANE" package="T2I" value="T2I" x="38.6672" y="76.4014" rot="R270"/>
-<element name="PS" library="BACKPLANE" package="T2I" value="T2I" x="53.6" y="79.8"/>
 <element name="POWER1" library="T2I5P" package="T2I5P" value="T2I5P" x="100.8" y="63" rot="R90"/>
-<element name="BT_SIGNAL" library="BACKPLANE" package="T2I" value="T2I" x="20.349" y="30.861" rot="R270"/>
-<element name="BT_POWER" library="BACKPLANE" package="T2I" value="T2I" x="27.6172" y="56.2294" rot="R270"/>
+<element name="BT_SIGNAL" library="BACKPLANE" package="T2I" value="T2I" x="20.3926" y="26.289" rot="R90"/>
+<element name="BT_POWER" library="BACKPLANE" package="T2I" value="T2I" x="31.7574" y="44.012" rot="R270"/>
 <element name="U$1" library="backplane_to_shield_connector" package="20X2PIN" value="SHIELDCONNECTOR" x="57.8" y="40.4"/>
 <element name="JP1" library="pinhead" package="1X02" value="" x="62.9618" y="6.1426" rot="R180"/>
+<element name="PS" library="con-hirose-df13" package="DF13-4P-1.25DSA" value="DF13-4P-1.25DSA" x="61.018" y="77.5974" rot="R90"/>
 </elements>
 <signals>
 <signal name="N$3">
@@ -786,7 +828,6 @@ Created by Nick Molo for the Purdue IEEE ROV Team
 </polygon>
 <contactref element="CAMPOW" pad="3"/>
 <contactref element="CAMPOW" pad="4"/>
-<contactref element="PS" pad="4"/>
 <contactref element="BT_POWER" pad="1"/>
 <contactref element="BT_POWER" pad="2"/>
 <contactref element="POWER1" pad="P$2"/>
@@ -807,11 +848,8 @@ Created by Nick Molo for the Purdue IEEE ROV Team
 <contactref element="U$1" pad="3"/>
 <contactref element="U$1" pad="4"/>
 <contactref element="U$1" pad="2"/>
-<via x="38.0492" y="30.0228" extent="1-16" drill="0.6"/>
-<via x="18.542" y="58.928" extent="1-16" drill="0.6"/>
-<via x="73.5584" y="70.9676" extent="1-16" drill="0.6"/>
-<via x="35.1536" y="13.5636" extent="1-16" drill="0.6"/>
-<via x="102.3366" y="16.7386" extent="1-16" drill="0.6"/>
+<contactref element="PS" pad="P$4"/>
+<contactref element="BT_SIGNAL" pad="3"/>
 </signal>
 <signal name="N$11">
 </signal>
@@ -844,30 +882,27 @@ Created by Nick Molo for the Purdue IEEE ROV Team
 <wire x1="61.5136" y1="13.8938" x2="59.843" y2="12.2232" width="0.8128" layer="16"/>
 </signal>
 <signal name="3.3V">
-<contactref element="PS" pad="3"/>
-<contactref element="BT_POWER" pad="3"/>
 <contactref element="U$1" pad="25"/>
 <contactref element="U$1" pad="26"/>
 <wire x1="1.92" y1="44.21" x2="4.46" y2="44.21" width="0.8128" layer="1"/>
-<wire x1="4.46" y1="44.21" x2="30.3366" y2="44.21" width="0.8128" layer="1"/>
-<wire x1="30.3366" y1="44.21" x2="30.4172" y2="44.1294" width="0.8128" layer="1"/>
-<wire x1="30.4172" y1="44.1294" x2="52.7146" y2="44.1294" width="0.8128" layer="1"/>
-<wire x1="52.7146" y1="44.1294" x2="59.8424" y2="51.2572" width="0.8128" layer="1"/>
-<wire x1="59.8424" y1="51.2572" x2="59.8424" y2="74.168" width="0.8128" layer="1"/>
-<wire x1="65.7" y1="82.6" x2="65.7" y2="80.0256" width="0.8128" layer="1"/>
-<wire x1="65.7" y1="80.0256" x2="59.8424" y2="74.168" width="0.8128" layer="1"/>
+<contactref element="PS" pad="P$1"/>
+<contactref element="BT_SIGNAL" pad="4"/>
+<wire x1="4.46" y1="44.21" x2="13.7716" y2="44.21" width="0.8128" layer="1"/>
+<wire x1="13.7716" y1="44.21" x2="17.5926" y2="40.389" width="0.8128" layer="1"/>
+<wire x1="61.018" y1="79.4724" x2="31.5934" y2="79.4724" width="0.8128" layer="1"/>
+<wire x1="31.5934" y1="79.4724" x2="26.289" y2="74.168" width="0.8128" layer="1"/>
+<wire x1="26.289" y1="74.168" x2="26.289" y2="56.7274" width="0.8128" layer="1"/>
+<wire x1="26.289" y1="56.7274" x2="13.7716" y2="44.21" width="0.8128" layer="1"/>
 </signal>
 <signal name="TX_H">
 <contactref element="SC" pad="1"/>
-<contactref element="BT_SIGNAL" pad="1"/>
 <contactref element="U$1" pad="34"/>
-<wire x1="23.149" y1="22.761" x2="92.7" y2="22.761" width="0.3048" layer="16"/>
-<wire x1="4.46" y1="54.37" x2="7.1996" y2="54.37" width="0.3048" layer="16"/>
-<wire x1="7.1996" y1="54.37" x2="14.4272" y2="47.1424" width="0.3048" layer="16"/>
-<wire x1="14.4272" y1="47.1424" x2="14.4272" y2="25.146" width="0.3048" layer="16"/>
-<wire x1="14.4272" y1="25.146" x2="16.8148" y2="22.7584" width="0.3048" layer="16"/>
-<wire x1="16.8148" y1="22.7584" x2="23.1464" y2="22.7584" width="0.3048" layer="16"/>
-<wire x1="23.1464" y1="22.7584" x2="23.149" y2="22.761" width="0.3048" layer="16"/>
+<wire x1="4.46" y1="54.37" x2="52.437" y2="54.37" width="0.3048" layer="16"/>
+<wire x1="52.437" y1="54.37" x2="53.975" y2="52.832" width="0.3048" layer="16"/>
+<wire x1="53.975" y1="52.832" x2="53.975" y2="24.892" width="0.3048" layer="16"/>
+<wire x1="53.975" y1="24.892" x2="55.4482" y2="23.4188" width="0.3048" layer="16"/>
+<wire x1="55.4482" y1="23.4188" x2="92.0422" y2="23.4188" width="0.3048" layer="16"/>
+<wire x1="92.0422" y1="23.4188" x2="92.7" y2="22.761" width="0.3048" layer="16"/>
 </signal>
 <signal name="3V3_PIEZO">
 <contactref element="S_PIEZO" pad="1"/>
@@ -875,41 +910,43 @@ Created by Nick Molo for the Purdue IEEE ROV Team
 <contactref element="U$1" pad="63"/>
 <contactref element="U$1" pad="64"/>
 <wire x1="118.76" y1="41.67" x2="116.22" y2="41.67" width="0.8128" layer="16"/>
-<wire x1="116.22" y1="41.67" x2="110.857" y2="41.67" width="0.8128" layer="16"/>
-<wire x1="110.857" y1="41.67" x2="104.6988" y2="47.8282" width="0.8128" layer="16"/>
-<wire x1="104.6988" y1="47.8282" x2="47.6758" y2="47.8282" width="0.8128" layer="16"/>
-<wire x1="47.6758" y1="47.8282" x2="44.704" y2="50.8" width="0.8128" layer="16"/>
-<wire x1="44.704" y1="50.8" x2="44.704" y2="63.0646" width="0.8128" layer="16"/>
-<wire x1="44.704" y1="63.0646" x2="41.4672" y2="66.3014" width="0.8128" layer="16"/>
 <wire x1="41.4672" y1="66.3014" x2="41.4672" y2="68.3014" width="0.8128" layer="16"/>
+<wire x1="41.4672" y1="66.3014" x2="66.2104" y2="66.3014" width="0.8128" layer="16"/>
+<wire x1="66.2104" y1="66.3014" x2="68.8086" y2="63.7032" width="0.8128" layer="16"/>
+<wire x1="68.8086" y1="63.7032" x2="68.8086" y2="45.2628" width="0.8128" layer="16"/>
+<wire x1="68.8086" y1="45.2628" x2="73.5076" y2="40.5638" width="0.8128" layer="16"/>
+<wire x1="73.5076" y1="40.5638" x2="115.1138" y2="40.5638" width="0.8128" layer="16"/>
+<wire x1="115.1138" y1="40.5638" x2="116.22" y2="41.67" width="0.8128" layer="16"/>
 </signal>
 <signal name="TX_L">
 <contactref element="SC" pad="2"/>
-<contactref element="BT_SIGNAL" pad="2"/>
 <contactref element="U$1" pad="32"/>
-<wire x1="92.7" y1="20.761" x2="23.149" y2="20.761" width="0.3048" layer="16"/>
-<wire x1="4.46" y1="51.83" x2="6.0058" y2="51.83" width="0.3048" layer="16"/>
-<wire x1="6.0058" y1="51.83" x2="11.6078" y2="46.228" width="0.3048" layer="16"/>
-<wire x1="11.6078" y1="46.228" x2="11.6078" y2="23.9522" width="0.3048" layer="16"/>
-<wire x1="11.6078" y1="23.9522" x2="14.6304" y2="20.9296" width="0.3048" layer="16"/>
-<wire x1="14.6304" y1="20.9296" x2="22.9804" y2="20.9296" width="0.3048" layer="16"/>
-<wire x1="22.9804" y1="20.9296" x2="23.149" y2="20.761" width="0.3048" layer="16"/>
+<wire x1="4.46" y1="51.83" x2="50.0494" y2="51.83" width="0.3048" layer="16"/>
+<wire x1="50.0494" y1="51.83" x2="51.8922" y2="49.9872" width="0.3048" layer="16"/>
+<wire x1="51.8922" y1="49.9872" x2="51.8922" y2="25.0698" width="0.3048" layer="16"/>
+<wire x1="51.8922" y1="25.0698" x2="56.261" y2="20.701" width="0.3048" layer="16"/>
+<wire x1="56.261" y1="20.701" x2="92.64" y2="20.701" width="0.3048" layer="16"/>
+<wire x1="92.64" y1="20.701" x2="92.7" y2="20.761" width="0.3048" layer="16"/>
 </signal>
 <signal name="SCL">
-<contactref element="PS" pad="1"/>
 <contactref element="U$1" pad="39"/>
-<wire x1="61.7" y1="82.6" x2="61.7" y2="80.9532" width="0.8128" layer="16"/>
-<wire x1="61.7" y1="80.9532" x2="52.832" y2="72.0852" width="0.8128" layer="16"/>
-<wire x1="52.832" y1="72.0852" x2="12.0152" y2="72.0852" width="0.8128" layer="16"/>
-<wire x1="12.0152" y1="72.0852" x2="1.92" y2="61.99" width="0.8128" layer="16"/>
+<contactref element="PS" pad="P$2"/>
+<wire x1="61.018" y1="78.2224" x2="31.9944" y2="78.2224" width="0.3048" layer="16"/>
+<wire x1="31.9944" y1="78.2224" x2="28.0416" y2="74.2696" width="0.3048" layer="16"/>
+<wire x1="28.0416" y1="74.2696" x2="28.0416" y2="66.6242" width="0.3048" layer="16"/>
+<wire x1="28.0416" y1="66.6242" x2="25.527" y2="64.1096" width="0.3048" layer="16"/>
+<wire x1="25.527" y1="64.1096" x2="4.0396" y2="64.1096" width="0.3048" layer="16"/>
+<wire x1="4.0396" y1="64.1096" x2="1.92" y2="61.99" width="0.3048" layer="16"/>
 </signal>
 <signal name="SDA">
-<contactref element="PS" pad="2"/>
 <contactref element="U$1" pad="40"/>
-<wire x1="63.7" y1="82.6" x2="63.7" y2="80.4894" width="0.8128" layer="16"/>
-<wire x1="63.7" y1="80.4894" x2="53.6448" y2="70.4342" width="0.8128" layer="16"/>
-<wire x1="53.6448" y1="70.4342" x2="12.9042" y2="70.4342" width="0.8128" layer="16"/>
-<wire x1="12.9042" y1="70.4342" x2="4.46" y2="61.99" width="0.8128" layer="16"/>
+<contactref element="PS" pad="P$3"/>
+<wire x1="61.018" y1="76.9724" x2="32.3446" y2="76.9724" width="0.3048" layer="16"/>
+<wire x1="32.3446" y1="76.9724" x2="29.972" y2="74.5998" width="0.3048" layer="16"/>
+<wire x1="29.972" y1="74.5998" x2="29.972" y2="66.6496" width="0.3048" layer="16"/>
+<wire x1="29.972" y1="66.6496" x2="26.4668" y2="63.1444" width="0.3048" layer="16"/>
+<wire x1="26.4668" y1="63.1444" x2="5.6144" y2="63.1444" width="0.3048" layer="16"/>
+<wire x1="5.6144" y1="63.1444" x2="4.46" y2="61.99" width="0.3048" layer="16"/>
 </signal>
 <signal name="5V_LASER">
 <contactref element="CAMPOW" pad="2"/>
@@ -921,35 +958,25 @@ Created by Nick Molo for the Purdue IEEE ROV Team
 <wire x1="96.1136" y1="34.3916" x2="61.0156" y2="34.3916" width="0.8128" layer="16"/>
 <wire x1="61.0156" y1="34.3916" x2="60.938" y2="34.4692" width="0.8128" layer="16"/>
 </signal>
-<signal name="N$23">
-<contactref element="POWER" pad="P$4"/>
-</signal>
-<signal name="N$28">
-<contactref element="POWER1" pad="P$4"/>
-</signal>
 <signal name="RX_H">
 <contactref element="SC" pad="3"/>
-<contactref element="BT_SIGNAL" pad="3"/>
 <contactref element="U$1" pad="30"/>
-<wire x1="23.149" y1="18.761" x2="92.7" y2="18.761" width="0.3048" layer="16"/>
-<wire x1="4.46" y1="49.29" x2="5.447" y2="49.29" width="0.3048" layer="16"/>
-<wire x1="5.447" y1="49.29" x2="9.3218" y2="45.4152" width="0.3048" layer="16"/>
-<wire x1="9.3218" y1="45.4152" x2="9.3218" y2="22.5806" width="0.3048" layer="16"/>
-<wire x1="9.3218" y1="22.5806" x2="12.9794" y2="18.923" width="0.3048" layer="16"/>
-<wire x1="12.9794" y1="18.923" x2="22.987" y2="18.923" width="0.3048" layer="16"/>
-<wire x1="22.987" y1="18.923" x2="23.149" y2="18.761" width="0.3048" layer="16"/>
+<wire x1="4.46" y1="49.29" x2="48.1952" y2="49.29" width="0.3048" layer="16"/>
+<wire x1="48.1952" y1="49.29" x2="49.8602" y2="47.625" width="0.3048" layer="16"/>
+<wire x1="49.8602" y1="47.625" x2="49.8602" y2="24.3078" width="0.3048" layer="16"/>
+<wire x1="49.8602" y1="24.3078" x2="55.8546" y2="18.3134" width="0.3048" layer="16"/>
+<wire x1="55.8546" y1="18.3134" x2="92.2524" y2="18.3134" width="0.3048" layer="16"/>
+<wire x1="92.2524" y1="18.3134" x2="92.7" y2="18.761" width="0.3048" layer="16"/>
 </signal>
 <signal name="RX_L">
 <contactref element="SC" pad="4"/>
-<contactref element="BT_SIGNAL" pad="4"/>
 <contactref element="U$1" pad="28"/>
-<wire x1="92.7" y1="16.761" x2="23.149" y2="16.761" width="0.3048" layer="16"/>
-<wire x1="4.46" y1="46.75" x2="5.1422" y2="46.75" width="0.3048" layer="16"/>
-<wire x1="5.1422" y1="46.75" x2="7.2136" y2="44.6786" width="0.3048" layer="16"/>
-<wire x1="7.2136" y1="44.6786" x2="7.2136" y2="20.193" width="0.3048" layer="16"/>
-<wire x1="7.2136" y1="20.193" x2="10.6934" y2="16.7132" width="0.3048" layer="16"/>
-<wire x1="10.6934" y1="16.7132" x2="23.1012" y2="16.7132" width="0.3048" layer="16"/>
-<wire x1="23.1012" y1="16.7132" x2="23.149" y2="16.761" width="0.3048" layer="16"/>
+<wire x1="4.46" y1="46.75" x2="46.1632" y2="46.75" width="0.3048" layer="16"/>
+<wire x1="46.1632" y1="46.75" x2="47.9298" y2="44.9834" width="0.3048" layer="16"/>
+<wire x1="47.9298" y1="44.9834" x2="47.9298" y2="24.257" width="0.3048" layer="16"/>
+<wire x1="47.9298" y1="24.257" x2="56.134" y2="16.0528" width="0.3048" layer="16"/>
+<wire x1="56.134" y1="16.0528" x2="91.9918" y2="16.0528" width="0.3048" layer="16"/>
+<wire x1="91.9918" y1="16.0528" x2="92.7" y2="16.761" width="0.3048" layer="16"/>
 </signal>
 <signal name="GND_PIEZO">
 <contactref element="S_PIEZO" pad="3"/>
@@ -958,22 +985,14 @@ Created by Nick Molo for the Purdue IEEE ROV Team
 <contactref element="U$1" pad="62"/>
 <wire x1="118.76" y1="39.13" x2="116.22" y2="39.13" width="0.8128" layer="16"/>
 <wire x1="41.4672" y1="64.3014" x2="41.4672" y2="62.3014" width="0.8128" layer="16"/>
-<wire x1="41.4672" y1="62.3014" x2="41.4672" y2="61.1996" width="0.8128" layer="16"/>
-<wire x1="41.4672" y1="61.1996" x2="43.2054" y2="59.4614" width="0.8128" layer="16"/>
-<wire x1="43.2054" y1="59.4614" x2="43.2054" y2="50.1904" width="0.8128" layer="16"/>
-<wire x1="43.2054" y1="50.1904" x2="47.625" y2="45.7708" width="0.8128" layer="16"/>
-<wire x1="47.625" y1="45.7708" x2="105.0036" y2="45.7708" width="0.8128" layer="16"/>
-<wire x1="105.0036" y1="45.7708" x2="111.4806" y2="39.2938" width="0.8128" layer="16"/>
-<wire x1="111.4806" y1="39.2938" x2="116.0562" y2="39.2938" width="0.8128" layer="16"/>
-<wire x1="116.0562" y1="39.2938" x2="116.22" y2="39.13" width="0.8128" layer="16"/>
+<wire x1="41.4672" y1="62.3014" x2="64.216" y2="62.3014" width="0.8128" layer="16"/>
+<wire x1="64.216" y1="62.3014" x2="66.0146" y2="60.5028" width="0.8128" layer="16"/>
+<wire x1="66.0146" y1="60.5028" x2="66.0146" y2="43.9166" width="0.8128" layer="16"/>
+<wire x1="66.0146" y1="43.9166" x2="71.2724" y2="38.6588" width="0.8128" layer="16"/>
+<wire x1="71.2724" y1="38.6588" x2="115.7488" y2="38.6588" width="0.8128" layer="16"/>
+<wire x1="115.7488" y1="38.6588" x2="116.22" y2="39.13" width="0.8128" layer="16"/>
 </signal>
 <signal name="N$21">
-</signal>
-<signal name="DSDAP">
-<contactref element="U$1" pad="37"/>
-</signal>
-<signal name="DSDLP">
-<contactref element="U$1" pad="35"/>
 </signal>
 <signal name="SERVO_PWM">
 <contactref element="U$1" pad="33"/>
@@ -984,12 +1003,6 @@ Created by Nick Molo for the Purdue IEEE ROV Team
 <wire x1="0.4318" y1="12.7762" x2="4.1148" y2="9.0932" width="0.3048" layer="1"/>
 <wire x1="4.1148" y1="9.0932" x2="54.713" y2="9.0932" width="0.3048" layer="1"/>
 <wire x1="54.713" y1="9.0932" x2="57.843" y2="12.2232" width="0.3048" layer="1"/>
-</signal>
-<signal name="DSDAM">
-<contactref element="U$1" pad="38"/>
-</signal>
-<signal name="DSCLM">
-<contactref element="U$1" pad="36"/>
 </signal>
 <signal name="+12V">
 <contactref element="U$1" pad="69"/>
@@ -1028,10 +1041,24 @@ Created by Nick Molo for the Purdue IEEE ROV Team
 <contactref element="U$1" pad="51"/>
 <contactref element="BT_POWER" pad="4"/>
 <wire x1="118.76" y1="26.43" x2="116.22" y2="26.43" width="0.8128" layer="16"/>
-<wire x1="30.4172" y1="42.1294" x2="41.8706" y2="42.1294" width="0.8128" layer="1"/>
-<wire x1="41.8706" y1="42.1294" x2="59" y2="25" width="0.8128" layer="1"/>
-<wire x1="59" y1="25" x2="114.79" y2="25" width="0.8128" layer="1"/>
-<wire x1="114.79" y1="25" x2="116.22" y2="26.43" width="0.8128" layer="1"/>
+<contactref element="BT_POWER" pad="3"/>
+<wire x1="34.5574" y1="31.912" x2="34.5574" y2="29.912" width="0.8128" layer="1"/>
+<wire x1="34.5574" y1="29.912" x2="54.7462" y2="29.912" width="0.8128" layer="1"/>
+<wire x1="54.7462" y1="29.912" x2="59.3598" y2="25.2984" width="0.8128" layer="1"/>
+<wire x1="59.3598" y1="25.2984" x2="115.0884" y2="25.2984" width="0.8128" layer="1"/>
+<wire x1="115.0884" y1="25.2984" x2="116.22" y2="26.43" width="0.8128" layer="1"/>
+</signal>
+<signal name="RX_BT">
+<contactref element="U$1" pad="22"/>
+<contactref element="BT_SIGNAL" pad="2"/>
+<wire x1="4.46" y1="39.13" x2="14.8516" y2="39.13" width="0.3048" layer="1"/>
+<wire x1="14.8516" y1="39.13" x2="17.5926" y2="36.389" width="0.3048" layer="1"/>
+</signal>
+<signal name="TX_BT">
+<contactref element="U$1" pad="20"/>
+<contactref element="BT_SIGNAL" pad="1"/>
+<wire x1="4.46" y1="36.59" x2="15.3916" y2="36.59" width="0.3048" layer="1"/>
+<wire x1="15.3916" y1="36.59" x2="17.5926" y2="34.389" width="0.3048" layer="1"/>
 </signal>
 </signals>
 </board>

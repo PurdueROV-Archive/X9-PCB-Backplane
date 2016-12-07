@@ -991,6 +991,178 @@
 </deviceset>
 </devicesets>
 </library>
+<library name="con-hirose-df13">
+<description>&lt;b&gt;Hirose DF13 Series.&lt;/b&gt;&lt;p&gt;
+
+1.25mm Pitch Miniature Crimping Connector.&lt;p&gt;
+Source: &lt;a href="http://www.hirose.co.jp/cataloge_hp/e53600014.pdf"&gt;http://www.hirose.co.jp/cataloge_hp/e53600014.pdf&lt;/a&gt;&lt;p&gt;
+
+&lt;author&gt;Created by Dmitriy Ivashin (divashin@gmail.com)&lt;/author&gt;</description>
+<packages>
+<package name="DF13-4P-1.25DSA">
+<description>Single Row Straight Pin Header (Through hole)</description>
+<wire x1="-3.325" y1="-2.19" x2="3.325" y2="-2.19" width="0.3048" layer="21"/>
+<wire x1="-3.325" y1="1.21" x2="3.325" y2="1.21" width="0.3048" layer="21"/>
+<wire x1="-3.325" y1="1.21" x2="-3.325" y2="0" width="0.3048" layer="21"/>
+<wire x1="-3.325" y1="0" x2="-3.325" y2="-0.81" width="0.3048" layer="21"/>
+<wire x1="-3.325" y1="-0.81" x2="-3.325" y2="-2.19" width="0.3048" layer="21"/>
+<wire x1="3.325" y1="-2.19" x2="3.325" y2="-0.81" width="0.3048" layer="21"/>
+<wire x1="3.325" y1="-0.81" x2="3.325" y2="0" width="0.3048" layer="21"/>
+<wire x1="3.325" y1="0" x2="3.325" y2="1.21" width="0.3048" layer="21"/>
+<wire x1="-2.825" y1="-1.59" x2="2.825" y2="-1.59" width="0.127" layer="21"/>
+<wire x1="-2.825" y1="0.81" x2="-2.825" y2="0" width="0.127" layer="21"/>
+<wire x1="-2.825" y1="0" x2="-2.825" y2="-0.81" width="0.1" layer="21"/>
+<wire x1="-2.825" y1="-0.81" x2="-2.825" y2="-1.59" width="0.127" layer="21"/>
+<wire x1="2.825" y1="0.81" x2="2.825" y2="0" width="0.127" layer="21"/>
+<wire x1="2.825" y1="0" x2="2.825" y2="-0.81" width="0.1" layer="21"/>
+<wire x1="2.825" y1="-0.81" x2="2.825" y2="-1.59" width="0.127" layer="21"/>
+<wire x1="-2.825" y1="0.81" x2="2.825" y2="0.81" width="0.127" layer="21"/>
+<wire x1="-3.325" y1="0" x2="-2.825" y2="0" width="0.127" layer="21"/>
+<wire x1="2.825" y1="0" x2="3.325" y2="0" width="0.127" layer="21"/>
+<wire x1="-3.325" y1="-0.81" x2="-2.825" y2="-0.81" width="0.127" layer="21"/>
+<wire x1="2.825" y1="-0.81" x2="3.325" y2="-0.81" width="0.127" layer="21"/>
+<pad name="P$1" x="1.875" y="0" drill="0.6" diameter="1.016" shape="square"/>
+<pad name="P$2" x="0.625" y="0" drill="0.6" diameter="1.016"/>
+<pad name="P$3" x="-0.625" y="0" drill="0.6" diameter="1.016"/>
+<pad name="P$4" x="-1.875" y="0" drill="0.6" diameter="1.016"/>
+<text x="-3.125" y="1.875" size="1.27" layer="25">&gt;NAME</text>
+<text x="-3.125" y="-3.75" size="1.27" layer="27">&gt;VALUE</text>
+</package>
+<package name="DF13-4P-1.25DS">
+<description>Single Row Right Angle Pin Header (Through hole)</description>
+<wire x1="-3.325" y1="-4.47" x2="3.325" y2="-4.475" width="0.3048" layer="21"/>
+<wire x1="-3.325" y1="0.9" x2="-3.325" y2="-0.98" width="0.3048" layer="21"/>
+<wire x1="-3.325" y1="-0.98" x2="-3.325" y2="-4.47" width="0.3048" layer="21"/>
+<wire x1="-3.325" y1="-0.98" x2="3.335" y2="-0.98" width="0.127" layer="21"/>
+<wire x1="-3.325" y1="-0.81" x2="-3.325" y2="-0.98" width="0.3048" layer="21"/>
+<wire x1="-3.325" y1="-0.98" x2="-3.325" y2="-2.19" width="0.3048" layer="21"/>
+<wire x1="-3.325" y1="0.9" x2="3.325" y2="0.9" width="0.3048" layer="21"/>
+<wire x1="3.325" y1="-4.475" x2="3.325" y2="0.9" width="0.3048" layer="21"/>
+<pad name="P$1" x="1.875" y="0" drill="0.6" diameter="1.016" shape="square"/>
+<pad name="P$2" x="0.625" y="0" drill="0.6" diameter="1.016"/>
+<pad name="P$3" x="-0.625" y="0" drill="0.6" diameter="1.016"/>
+<pad name="P$4" x="-1.875" y="0" drill="0.6" diameter="1.016"/>
+<text x="-3.125" y="1.575" size="1.27" layer="25">&gt;NAME</text>
+<text x="-3.125" y="-6.255" size="1.27" layer="27">&gt;VALUE</text>
+</package>
+<package name="DF13C-4P-1.25V">
+<description>Single Row Straight Pin Header (SMT)</description>
+<wire x1="-4.075" y1="-3.6" x2="4.075" y2="-3.6" width="0.3048" layer="21"/>
+<wire x1="4.075" y1="-3.6" x2="4.075" y2="0" width="0.3048" layer="21"/>
+<wire x1="4.075" y1="0" x2="-4.075" y2="0" width="0.3048" layer="21"/>
+<wire x1="-4.075" y1="0" x2="-4.075" y2="-3.6" width="0.3048" layer="21"/>
+<smd name="M$1" x="-4.325" y="-1.8" dx="2.2" dy="1.6" layer="1" rot="R90"/>
+<smd name="M$0" x="4.325" y="-1.8" dx="2.2" dy="1.6" layer="1" rot="R90"/>
+<smd name="P$1" x="-1.875" y="0.9" dx="0.7" dy="1.8" layer="1"/>
+<smd name="P$2" x="-0.625" y="0.9" dx="0.7" dy="1.8" layer="1"/>
+<smd name="P$3" x="0.625" y="0.9" dx="0.7" dy="1.8" layer="1"/>
+<smd name="P$4" x="1.875" y="0.9" dx="0.7" dy="1.8" layer="1"/>
+<text x="-3.475" y="1.525" size="2.54" layer="21">.</text>
+<rectangle x1="-2.5" y1="-2.475" x2="2.5" y2="-0.1" layer="39"/>
+</package>
+<package name="DF13A-4P-1.25H">
+<description>Single Row Straight Pin Header (SMT)</description>
+<wire x1="-3.65" y1="0.3" x2="3.65" y2="0.3" width="0.3048" layer="21"/>
+<wire x1="4.075" y1="0.9" x2="4.075" y2="4.5" width="0.3048" layer="21"/>
+<wire x1="3.65" y1="5.3" x2="-3.65" y2="5.3" width="0.3048" layer="21"/>
+<wire x1="-4.075" y1="4.5" x2="-4.075" y2="0.9" width="0.3048" layer="21"/>
+<wire x1="-3.65" y1="5.3" x2="-3.65" y2="4.5" width="0.3048" layer="21"/>
+<wire x1="-3.65" y1="4.5" x2="-4.075" y2="4.5" width="0.3048" layer="21"/>
+<wire x1="3.65" y1="5.3" x2="3.65" y2="4.5" width="0.3048" layer="21"/>
+<wire x1="3.65" y1="4.5" x2="4.075" y2="4.5" width="0.3048" layer="21"/>
+<wire x1="-3.65" y1="0.3" x2="-3.65" y2="0.9" width="0.3048" layer="21"/>
+<wire x1="-3.65" y1="0.9" x2="-4.075" y2="0.9" width="0.3048" layer="21"/>
+<wire x1="3.65" y1="0.3" x2="3.65" y2="0.9" width="0.3048" layer="21"/>
+<wire x1="3.65" y1="0.9" x2="4.075" y2="0.9" width="0.3048" layer="21"/>
+<wire x1="-3.65" y1="4.5" x2="-3.65" y2="0.9" width="0.127" layer="21"/>
+<wire x1="3.65" y1="4.5" x2="3.65" y2="0.9" width="0.127" layer="21"/>
+<smd name="P$1" x="-1.875" y="-0.9" dx="0.7" dy="1.8" layer="1"/>
+<smd name="P$2" x="-0.625" y="-0.9" dx="0.7" dy="1.8" layer="1"/>
+<smd name="M$0" x="-4.225" y="2.4" dx="1.6" dy="2.2" layer="1"/>
+<smd name="M$1" x="4.225" y="2.4" dx="1.6" dy="2.2" layer="1"/>
+<smd name="P$3" x="0.625" y="-0.9" dx="0.7" dy="1.8" layer="1"/>
+<smd name="P$4" x="1.875" y="-0.9" dx="0.7" dy="1.8" layer="1"/>
+<text x="-3.45" y="-1.875" size="2.54" layer="21">.</text>
+</package>
+</packages>
+<symbols>
+<symbol name="CON-1X4P">
+<wire x1="1.905" y1="3.81" x2="-1.905" y2="3.81" width="0.254" layer="94"/>
+<wire x1="-1.905" y1="-6.35" x2="-1.905" y2="3.81" width="0.254" layer="94"/>
+<wire x1="-1.905" y1="-6.35" x2="1.905" y2="-6.35" width="0.254" layer="94"/>
+<wire x1="1.905" y1="3.81" x2="1.905" y2="-6.35" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="2.54" x2="-0.635" y2="2.54" width="0.1524" layer="94"/>
+<wire x1="-2.54" y1="0" x2="-0.635" y2="0" width="0.1524" layer="94"/>
+<wire x1="-2.54" y1="-2.54" x2="-0.635" y2="-2.54" width="0.1524" layer="94"/>
+<wire x1="-2.54" y1="-5.08" x2="-0.635" y2="-5.08" width="0.1524" layer="94"/>
+<wire x1="-0.635" y1="2.54" x2="0.635" y2="2.54" width="0.4064" layer="94"/>
+<wire x1="-0.635" y1="0" x2="0.635" y2="0" width="0.4064" layer="94"/>
+<wire x1="-0.635" y1="-2.54" x2="0.635" y2="-2.54" width="0.4064" layer="94"/>
+<wire x1="-0.635" y1="-5.08" x2="0.635" y2="-5.08" width="0.4064" layer="94"/>
+<text x="-1.905" y="5.08" size="1.778" layer="95">&gt;NAME</text>
+<text x="-1.905" y="-9.2075" size="1.778" layer="96">&gt;VALUE</text>
+<pin name="1" x="-5.08" y="2.54" visible="pad" length="short" direction="pas" swaplevel="1"/>
+<pin name="2" x="-5.08" y="0" visible="pad" length="short" direction="pas" swaplevel="1"/>
+<pin name="3" x="-5.08" y="-2.54" visible="pad" length="short" direction="pas" swaplevel="1"/>
+<pin name="4" x="-5.08" y="-5.08" visible="pad" length="short" direction="pas" swaplevel="1"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="DF13-4P-1.25">
+<description>DF13-4P
+1.25mm Pitch Miniature Crimping Connector.</description>
+<gates>
+<gate name="G$1" symbol="CON-1X4P" x="0" y="0"/>
+</gates>
+<devices>
+<device name="DSA" package="DF13-4P-1.25DSA">
+<connects>
+<connect gate="G$1" pin="1" pad="P$1"/>
+<connect gate="G$1" pin="2" pad="P$2"/>
+<connect gate="G$1" pin="3" pad="P$3"/>
+<connect gate="G$1" pin="4" pad="P$4"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="DS" package="DF13-4P-1.25DS">
+<connects>
+<connect gate="G$1" pin="1" pad="P$1"/>
+<connect gate="G$1" pin="2" pad="P$2"/>
+<connect gate="G$1" pin="3" pad="P$3"/>
+<connect gate="G$1" pin="4" pad="P$4"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="V" package="DF13C-4P-1.25V">
+<connects>
+<connect gate="G$1" pin="1" pad="P$1"/>
+<connect gate="G$1" pin="2" pad="P$2"/>
+<connect gate="G$1" pin="3" pad="P$3"/>
+<connect gate="G$1" pin="4" pad="P$4"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="H" package="DF13A-4P-1.25H">
+<connects>
+<connect gate="G$1" pin="1" pad="P$1"/>
+<connect gate="G$1" pin="2" pad="P$2"/>
+<connect gate="G$1" pin="3" pad="P$3"/>
+<connect gate="G$1" pin="4" pad="P$4"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -1009,7 +1181,6 @@
 <part name="CAMPOW" library="BACKPLANE" deviceset="T2I" device=""/>
 <part name="SC" library="BACKPLANE" deviceset="T2I" device=""/>
 <part name="S_PIEZO" library="BACKPLANE" deviceset="T2I" device=""/>
-<part name="PS" library="BACKPLANE" deviceset="T2I" device=""/>
 <part name="POWER1" library="T2I5P" deviceset="T2I5P" device=""/>
 <part name="BT_SIGNAL" library="BACKPLANE" deviceset="T2I" device=""/>
 <part name="BT_POWER" library="BACKPLANE" deviceset="T2I" device=""/>
@@ -1018,6 +1189,7 @@
 <part name="GND1" library="supply1" deviceset="GND" device=""/>
 <part name="JP1" library="pinhead" deviceset="PINHD-1X2" device=""/>
 <part name="GND2" library="supply1" deviceset="GND" device=""/>
+<part name="PS" library="con-hirose-df13" deviceset="DF13-4P-1.25" device="DSA"/>
 </parts>
 <sheets>
 <sheet>
@@ -1035,7 +1207,6 @@
 <instance part="CAMPOW" gate="G$1" x="33.02" y="93.98"/>
 <instance part="SC" gate="G$1" x="33.02" y="71.12"/>
 <instance part="S_PIEZO" gate="G$1" x="33.02" y="38.1"/>
-<instance part="PS" gate="G$1" x="60.96" y="93.98"/>
 <instance part="POWER1" gate="&gt;NAME" x="63.5" y="187.96"/>
 <instance part="BT_SIGNAL" gate="G$1" x="60.96" y="60.96"/>
 <instance part="BT_POWER" gate="G$1" x="83.82" y="60.96"/>
@@ -1045,6 +1216,10 @@
 <instance part="GND1" gate="1" x="307.34" y="106.68"/>
 <instance part="JP1" gate="G$1" x="38.1" y="144.78" rot="R90"/>
 <instance part="GND2" gate="1" x="353.06" y="101.6"/>
+<instance part="PS" gate="G$1" x="71.12" y="116.84" smashed="yes" rot="R270">
+<attribute name="NAME" x="76.2" y="118.745" size="1.778" layer="95" rot="R270"/>
+<attribute name="VALUE" x="61.9125" y="118.745" size="1.778" layer="96" rot="R270"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -1084,16 +1259,6 @@
 </net>
 <net name="3.3V" class="0">
 <segment>
-<pinref part="PS" gate="G$1" pin="3"/>
-<wire x1="68.58" y1="106.68" x2="68.58" y2="111.76" width="0.1524" layer="91"/>
-<label x="68.58" y="106.68" size="1.778" layer="95" rot="R90"/>
-</segment>
-<segment>
-<pinref part="BT_POWER" gate="G$1" pin="3"/>
-<wire x1="91.44" y1="73.66" x2="91.44" y2="78.74" width="0.1524" layer="91"/>
-<label x="91.44" y="73.66" size="1.778" layer="95" rot="R90"/>
-</segment>
-<segment>
 <pinref part="U$1" gate="G$1" pin="25"/>
 <wire x1="358.14" y1="144.78" x2="350.52" y2="144.78" width="0.1524" layer="91"/>
 <label x="350.52" y="144.78" size="1.778" layer="95"/>
@@ -1102,6 +1267,16 @@
 <pinref part="U$1" gate="G$1" pin="26"/>
 <wire x1="373.38" y1="144.78" x2="381" y2="144.78" width="0.1524" layer="91"/>
 <label x="373.38" y="144.78" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="PS" gate="G$1" pin="1"/>
+<wire x1="73.66" y1="121.92" x2="73.66" y2="127" width="0.1524" layer="91"/>
+<label x="73.66" y="129.54" size="1.778" layer="95" rot="R270"/>
+</segment>
+<segment>
+<pinref part="BT_SIGNAL" gate="G$1" pin="4"/>
+<wire x1="71.12" y1="73.66" x2="71.12" y2="81.28" width="0.1524" layer="91"/>
+<label x="71.12" y="76.2" size="1.778" layer="95" rot="R90"/>
 </segment>
 </net>
 <net name="GND" class="0">
@@ -1114,11 +1289,6 @@
 <pinref part="CAMPOW" gate="G$1" pin="4"/>
 <wire x1="43.18" y1="106.68" x2="43.18" y2="111.76" width="0.1524" layer="91"/>
 <label x="43.18" y="106.68" size="1.778" layer="95" rot="R90"/>
-</segment>
-<segment>
-<pinref part="PS" gate="G$1" pin="4"/>
-<wire x1="71.12" y1="106.68" x2="71.12" y2="111.76" width="0.1524" layer="91"/>
-<label x="71.12" y="106.68" size="1.778" layer="95" rot="R90"/>
 </segment>
 <segment>
 <pinref part="BT_POWER" gate="G$1" pin="1"/>
@@ -1214,17 +1384,22 @@
 <junction x="381" y="114.3"/>
 <pinref part="GND2" gate="1" pin="GND"/>
 </segment>
+<segment>
+<pinref part="PS" gate="G$1" pin="4"/>
+<wire x1="66.04" y1="121.92" x2="66.04" y2="127" width="0.1524" layer="91"/>
+<label x="66.04" y="129.54" size="1.778" layer="95" rot="R270"/>
+</segment>
+<segment>
+<pinref part="BT_SIGNAL" gate="G$1" pin="3"/>
+<wire x1="68.58" y1="73.66" x2="68.58" y2="81.28" width="0.1524" layer="91"/>
+<label x="68.58" y="73.66" size="1.778" layer="95" rot="R90"/>
+</segment>
 </net>
 <net name="TX_H" class="0">
 <segment>
 <pinref part="SC" gate="G$1" pin="1"/>
 <wire x1="35.56" y1="83.82" x2="35.56" y2="91.44" width="0.1524" layer="91"/>
 <label x="35.56" y="83.82" size="1.778" layer="95" rot="R90"/>
-</segment>
-<segment>
-<pinref part="BT_SIGNAL" gate="G$1" pin="1"/>
-<wire x1="63.5" y1="73.66" x2="63.5" y2="81.28" width="0.1524" layer="91"/>
-<label x="63.5" y="76.2" size="1.778" layer="95" rot="R90"/>
 </segment>
 <segment>
 <pinref part="U$1" gate="G$1" pin="A@34"/>
@@ -1261,11 +1436,6 @@
 <label x="38.1" y="83.82" size="1.778" layer="95" rot="R90"/>
 </segment>
 <segment>
-<pinref part="BT_SIGNAL" gate="G$1" pin="2"/>
-<wire x1="66.04" y1="73.66" x2="66.04" y2="81.28" width="0.1524" layer="91"/>
-<label x="66.04" y="73.66" size="1.778" layer="95" rot="R90"/>
-</segment>
-<segment>
 <pinref part="U$1" gate="G$1" pin="B@32"/>
 <wire x1="373.38" y1="152.4" x2="381" y2="152.4" width="0.1524" layer="91"/>
 <label x="373.38" y="152.4" size="1.778" layer="95"/>
@@ -1273,26 +1443,26 @@
 </net>
 <net name="SCL" class="0">
 <segment>
-<pinref part="PS" gate="G$1" pin="1"/>
-<wire x1="63.5" y1="106.68" x2="63.5" y2="111.76" width="0.1524" layer="91"/>
-<label x="63.5" y="106.68" size="1.778" layer="95" rot="R90"/>
-</segment>
-<segment>
 <pinref part="U$1" gate="G$1" pin="SCL@39"/>
 <wire x1="358.14" y1="162.56" x2="350.52" y2="162.56" width="0.1524" layer="91"/>
 <label x="353.06" y="162.56" size="1.778" layer="95"/>
 </segment>
-</net>
-<net name="SDA" class="0">
 <segment>
 <pinref part="PS" gate="G$1" pin="2"/>
-<wire x1="66.04" y1="106.68" x2="66.04" y2="111.76" width="0.1524" layer="91"/>
-<label x="66.04" y="106.68" size="1.778" layer="95" rot="R90"/>
+<wire x1="71.12" y1="121.92" x2="71.12" y2="127" width="0.1524" layer="91"/>
+<label x="71.12" y="129.54" size="1.778" layer="95" rot="R270"/>
 </segment>
+</net>
+<net name="SDA" class="0">
 <segment>
 <pinref part="U$1" gate="G$1" pin="SDA@40"/>
 <wire x1="373.38" y1="162.56" x2="381" y2="162.56" width="0.1524" layer="91"/>
 <label x="373.38" y="162.56" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="PS" gate="G$1" pin="3"/>
+<wire x1="68.58" y1="121.92" x2="68.58" y2="127" width="0.1524" layer="91"/>
+<label x="68.58" y="129.54" size="1.778" layer="95" rot="R270"/>
 </segment>
 </net>
 <net name="5V_LASER" class="0">
@@ -1312,28 +1482,11 @@
 <label x="307.34" y="137.16" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="N$23" class="0">
-<segment>
-<pinref part="POWER" gate="&gt;NAME" pin="3"/>
-<wire x1="33.02" y1="182.88" x2="33.02" y2="175.26" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$28" class="0">
-<segment>
-<pinref part="POWER1" gate="&gt;NAME" pin="3"/>
-<wire x1="63.5" y1="182.88" x2="63.5" y2="175.26" width="0.1524" layer="91"/>
-</segment>
-</net>
 <net name="RX_H" class="0">
 <segment>
 <pinref part="SC" gate="G$1" pin="3"/>
 <wire x1="40.64" y1="83.82" x2="40.64" y2="91.44" width="0.1524" layer="91"/>
 <label x="40.64" y="83.82" size="1.778" layer="95" rot="R90"/>
-</segment>
-<segment>
-<pinref part="BT_SIGNAL" gate="G$1" pin="3"/>
-<wire x1="68.58" y1="73.66" x2="68.58" y2="81.28" width="0.1524" layer="91"/>
-<label x="68.58" y="73.66" size="1.778" layer="95" rot="R90"/>
 </segment>
 <segment>
 <pinref part="U$1" gate="G$1" pin="Z@30"/>
@@ -1346,11 +1499,6 @@
 <pinref part="SC" gate="G$1" pin="4"/>
 <wire x1="43.18" y1="83.82" x2="43.18" y2="91.44" width="0.1524" layer="91"/>
 <label x="43.18" y="83.82" size="1.778" layer="95" rot="R90"/>
-</segment>
-<segment>
-<pinref part="BT_SIGNAL" gate="G$1" pin="4"/>
-<wire x1="71.12" y1="73.66" x2="71.12" y2="81.28" width="0.1524" layer="91"/>
-<label x="71.12" y="76.2" size="1.778" layer="95" rot="R90"/>
 </segment>
 <segment>
 <pinref part="U$1" gate="G$1" pin="Y@28"/>
@@ -1380,20 +1528,6 @@
 <label x="330.2" y="144.78" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="DSDAP" class="0">
-<segment>
-<pinref part="U$1" gate="G$1" pin="DSDAP@37"/>
-<wire x1="358.14" y1="160.02" x2="350.52" y2="160.02" width="0.1524" layer="91"/>
-<label x="353.06" y="160.02" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="DSDLP" class="0">
-<segment>
-<pinref part="U$1" gate="G$1" pin="DSCLP@35"/>
-<wire x1="358.14" y1="157.48" x2="350.52" y2="157.48" width="0.1524" layer="91"/>
-<label x="353.06" y="157.48" size="1.778" layer="95"/>
-</segment>
-</net>
 <net name="SERVO_PWM" class="0">
 <segment>
 <pinref part="U$1" gate="G$1" pin="SERVO_PWM@33"/>
@@ -1404,20 +1538,6 @@
 <pinref part="CAMDATA" gate="G$1" pin="4"/>
 <wire x1="43.18" y1="127" x2="43.18" y2="134.62" width="0.1524" layer="91"/>
 <label x="43.18" y="129.54" size="1.778" layer="95" rot="R90"/>
-</segment>
-</net>
-<net name="DSDAM" class="0">
-<segment>
-<pinref part="U$1" gate="G$1" pin="DSDAM@38"/>
-<wire x1="373.38" y1="160.02" x2="381" y2="160.02" width="0.1524" layer="91"/>
-<label x="373.38" y="160.02" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="DSCLM" class="0">
-<segment>
-<pinref part="U$1" gate="G$1" pin="DSCLM@36"/>
-<wire x1="373.38" y1="157.48" x2="381" y2="157.48" width="0.1524" layer="91"/>
-<label x="373.38" y="157.48" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="+12V" class="0">
@@ -1512,6 +1632,35 @@
 <pinref part="BT_POWER" gate="G$1" pin="4"/>
 <wire x1="93.98" y1="73.66" x2="93.98" y2="78.74" width="0.1524" layer="91"/>
 <label x="93.98" y="76.2" size="1.778" layer="95" rot="R90"/>
+</segment>
+<segment>
+<pinref part="BT_POWER" gate="G$1" pin="3"/>
+<wire x1="91.44" y1="73.66" x2="91.44" y2="78.74" width="0.1524" layer="91"/>
+<label x="91.44" y="73.66" size="1.778" layer="95" rot="R90"/>
+</segment>
+</net>
+<net name="RX_BT" class="0">
+<segment>
+<pinref part="U$1" gate="G$1" pin="22"/>
+<wire x1="373.38" y1="139.7" x2="381" y2="139.7" width="0.1524" layer="91"/>
+<label x="373.38" y="139.7" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="BT_SIGNAL" gate="G$1" pin="2"/>
+<wire x1="66.04" y1="73.66" x2="66.04" y2="81.28" width="0.1524" layer="91"/>
+<label x="66.04" y="73.66" size="1.778" layer="95" rot="R90"/>
+</segment>
+</net>
+<net name="TX_BT" class="0">
+<segment>
+<pinref part="U$1" gate="G$1" pin="20"/>
+<wire x1="373.38" y1="137.16" x2="381" y2="137.16" width="0.1524" layer="91"/>
+<label x="373.38" y="137.16" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="BT_SIGNAL" gate="G$1" pin="1"/>
+<wire x1="63.5" y1="73.66" x2="63.5" y2="81.28" width="0.1524" layer="91"/>
+<label x="63.5" y="76.2" size="1.778" layer="95" rot="R90"/>
 </segment>
 </net>
 </nets>
