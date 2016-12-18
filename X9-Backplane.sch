@@ -1163,6 +1163,39 @@ Source: &lt;a href="http://www.hirose.co.jp/cataloge_hp/e53600014.pdf"&gt;http:/
 </deviceset>
 </devicesets>
 </library>
+<library name="SparkFun-Aesthetics">
+<description>&lt;h3&gt;SparkFun Electronics' preferred foot prints&lt;/h3&gt;
+In this library you'll find non-functional items- supply symbols, logos, notations, frame blocks, etc.&lt;br&gt;&lt;br&gt;
+We've spent an enormous amount of time creating and checking these footprints and parts, but it is the end user's responsibility to ensure correctness and suitablity for a given componet or application. If you enjoy using this library, please buy one of our products at www.sparkfun.com.
+&lt;br&gt;&lt;br&gt;
+&lt;b&gt;Licensing:&lt;/b&gt; Creative Commons ShareAlike 4.0 International - https://creativecommons.org/licenses/by-sa/4.0/ 
+&lt;br&gt;&lt;br&gt;
+You are welcome to use this library for commercial purposes. For attribution, we ask that when you begin to sell your device using our footprint, you email us with a link to the product being sold. We want bragging rights that we helped (in a very small part) to create your 8th world wonder. We would like the opportunity to feature your device on our homepage.</description>
+<packages>
+</packages>
+<symbols>
+<symbol name="DGND">
+<wire x1="-1.905" y1="0" x2="1.905" y2="0" width="0.254" layer="94"/>
+<text x="-2.54" y="-2.54" size="1.778" layer="96">&gt;VALUE</text>
+<pin name="GND" x="0" y="2.54" visible="off" length="short" direction="sup" rot="R270"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="GND" prefix="GND">
+<description>&lt;b&gt;SUPPLY SYMBOL&lt;/b&gt;</description>
+<gates>
+<gate name="1" symbol="DGND" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -1175,7 +1208,6 @@ Source: &lt;a href="http://www.hirose.co.jp/cataloge_hp/e53600014.pdf"&gt;http:/
 <parts>
 <part name="FRAME2" library="frames" deviceset="FRAME_A_L" device=""/>
 <part name="FRAME3" library="frames" deviceset="FRAME_A_L" device=""/>
-<part name="FRAME4" library="frames" deviceset="FRAME_A_L" device=""/>
 <part name="POWER" library="T2I5P" deviceset="T2I5P" device=""/>
 <part name="CAMDATA" library="BACKPLANE" deviceset="T2I" device=""/>
 <part name="CAMPOW" library="BACKPLANE" deviceset="T2I" device=""/>
@@ -1190,18 +1222,19 @@ Source: &lt;a href="http://www.hirose.co.jp/cataloge_hp/e53600014.pdf"&gt;http:/
 <part name="JP1" library="pinhead" deviceset="PINHD-1X2" device=""/>
 <part name="GND2" library="supply1" deviceset="GND" device=""/>
 <part name="PS" library="con-hirose-df13" deviceset="DF13-4P-1.25" device="DSA"/>
+<part name="JP2" library="pinhead" deviceset="PINHD-1X2" device=""/>
+<part name="GND3" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
 <plain>
+<text x="223.52" y="200.66" size="1.778" layer="91">debugging pins</text>
 </plain>
 <instances>
 <instance part="FRAME2" gate="G$1" x="0" y="0"/>
 <instance part="FRAME2" gate="G$2" x="172.72" y="0"/>
 <instance part="FRAME3" gate="G$1" x="279.4" y="0"/>
 <instance part="FRAME3" gate="G$2" x="452.12" y="0"/>
-<instance part="FRAME4" gate="G$1" x="0" y="-215.9"/>
-<instance part="FRAME4" gate="G$2" x="172.72" y="-215.9"/>
 <instance part="POWER" gate="&gt;NAME" x="33.02" y="187.96"/>
 <instance part="CAMDATA" gate="G$1" x="33.02" y="114.3"/>
 <instance part="CAMPOW" gate="G$1" x="33.02" y="93.98"/>
@@ -1220,6 +1253,8 @@ Source: &lt;a href="http://www.hirose.co.jp/cataloge_hp/e53600014.pdf"&gt;http:/
 <attribute name="NAME" x="76.2" y="118.745" size="1.778" layer="95" rot="R270"/>
 <attribute name="VALUE" x="61.9125" y="118.745" size="1.778" layer="96" rot="R270"/>
 </instance>
+<instance part="JP2" gate="G$1" x="231.14" y="193.04" rot="R90"/>
+<instance part="GND3" gate="1" x="231.14" y="180.34"/>
 </instances>
 <busses>
 </busses>
@@ -1253,8 +1288,8 @@ Source: &lt;a href="http://www.hirose.co.jp/cataloge_hp/e53600014.pdf"&gt;http:/
 </segment>
 <segment>
 <pinref part="U$1" gate="G$2" pin="5V_LED@13"/>
-<wire x1="314.96" y1="134.62" x2="309.88" y2="134.62" width="0.1524" layer="91"/>
-<label x="307.34" y="134.62" size="1.778" layer="95"/>
+<wire x1="314.96" y1="134.62" x2="299.72" y2="134.62" width="0.1524" layer="91"/>
+<label x="299.72" y="134.62" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="3.3V" class="0">
@@ -1394,6 +1429,11 @@ Source: &lt;a href="http://www.hirose.co.jp/cataloge_hp/e53600014.pdf"&gt;http:/
 <wire x1="68.58" y1="73.66" x2="68.58" y2="81.28" width="0.1524" layer="91"/>
 <label x="68.58" y="73.66" size="1.778" layer="95" rot="R90"/>
 </segment>
+<segment>
+<pinref part="JP2" gate="G$1" pin="2"/>
+<wire x1="231.14" y1="190.5" x2="231.14" y2="182.88" width="0.1524" layer="91"/>
+<pinref part="GND3" gate="1" pin="GND"/>
+</segment>
 </net>
 <net name="TX_H" class="0">
 <segment>
@@ -1420,8 +1460,8 @@ Source: &lt;a href="http://www.hirose.co.jp/cataloge_hp/e53600014.pdf"&gt;http:/
 </segment>
 <segment>
 <pinref part="U$1" gate="G$2" pin="3V3_PIEZO@23"/>
-<wire x1="314.96" y1="147.32" x2="309.88" y2="147.32" width="0.1524" layer="91"/>
-<label x="309.88" y="147.32" size="1.778" layer="95"/>
+<wire x1="314.96" y1="147.32" x2="307.34" y2="147.32" width="0.1524" layer="91"/>
+<label x="302.26" y="147.32" size="1.778" layer="95"/>
 </segment>
 <segment>
 <pinref part="U$1" gate="G$2" pin="3V3_PIEZO@24"/>
@@ -1444,8 +1484,8 @@ Source: &lt;a href="http://www.hirose.co.jp/cataloge_hp/e53600014.pdf"&gt;http:/
 <net name="SCL" class="0">
 <segment>
 <pinref part="U$1" gate="G$1" pin="SCL@39"/>
-<wire x1="358.14" y1="162.56" x2="350.52" y2="162.56" width="0.1524" layer="91"/>
-<label x="353.06" y="162.56" size="1.778" layer="95"/>
+<wire x1="358.14" y1="162.56" x2="353.06" y2="162.56" width="0.1524" layer="91"/>
+<label x="350.52" y="162.56" size="1.778" layer="95"/>
 </segment>
 <segment>
 <pinref part="PS" gate="G$1" pin="2"/>
@@ -1457,7 +1497,7 @@ Source: &lt;a href="http://www.hirose.co.jp/cataloge_hp/e53600014.pdf"&gt;http:/
 <segment>
 <pinref part="U$1" gate="G$1" pin="SDA@40"/>
 <wire x1="373.38" y1="162.56" x2="381" y2="162.56" width="0.1524" layer="91"/>
-<label x="373.38" y="162.56" size="1.778" layer="95"/>
+<label x="375.92" y="162.56" size="1.778" layer="95"/>
 </segment>
 <segment>
 <pinref part="PS" gate="G$1" pin="3"/>
@@ -1478,8 +1518,8 @@ Source: &lt;a href="http://www.hirose.co.jp/cataloge_hp/e53600014.pdf"&gt;http:/
 </segment>
 <segment>
 <pinref part="U$1" gate="G$2" pin="5V_LASER@15"/>
-<wire x1="314.96" y1="137.16" x2="309.88" y2="137.16" width="0.1524" layer="91"/>
-<label x="307.34" y="137.16" size="1.778" layer="95"/>
+<wire x1="314.96" y1="137.16" x2="299.72" y2="137.16" width="0.1524" layer="91"/>
+<label x="299.72" y="137.16" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="RX_H" class="0">
@@ -1519,8 +1559,8 @@ Source: &lt;a href="http://www.hirose.co.jp/cataloge_hp/e53600014.pdf"&gt;http:/
 </segment>
 <segment>
 <pinref part="U$1" gate="G$2" pin="GND_PIEZO@21"/>
-<wire x1="314.96" y1="144.78" x2="309.88" y2="144.78" width="0.1524" layer="91"/>
-<label x="309.88" y="144.78" size="1.778" layer="95"/>
+<wire x1="314.96" y1="144.78" x2="307.34" y2="144.78" width="0.1524" layer="91"/>
+<label x="302.26" y="144.78" size="1.778" layer="95"/>
 </segment>
 <segment>
 <pinref part="U$1" gate="G$2" pin="GND_PIEZO@22"/>
@@ -1532,7 +1572,7 @@ Source: &lt;a href="http://www.hirose.co.jp/cataloge_hp/e53600014.pdf"&gt;http:/
 <segment>
 <pinref part="U$1" gate="G$1" pin="SERVO_PWM@33"/>
 <wire x1="358.14" y1="154.94" x2="350.52" y2="154.94" width="0.1524" layer="91"/>
-<label x="353.06" y="154.94" size="1.778" layer="95"/>
+<label x="350.52" y="154.94" size="1.778" layer="95"/>
 </segment>
 <segment>
 <pinref part="CAMDATA" gate="G$1" pin="4"/>
@@ -1609,12 +1649,17 @@ Source: &lt;a href="http://www.hirose.co.jp/cataloge_hp/e53600014.pdf"&gt;http:/
 <wire x1="314.96" y1="142.24" x2="312.42" y2="142.24" width="0.1524" layer="91"/>
 <wire x1="312.42" y1="142.24" x2="312.42" y2="139.7" width="0.1524" layer="91"/>
 <junction x="312.42" y="139.7"/>
-<label x="307.34" y="139.7" size="1.778" layer="95"/>
+<label x="299.72" y="139.7" size="1.778" layer="95"/>
 </segment>
 <segment>
 <pinref part="CAMPOW" gate="G$1" pin="1"/>
 <wire x1="35.56" y1="106.68" x2="35.56" y2="111.76" width="0.1524" layer="91"/>
 <label x="35.56" y="106.68" size="1.778" layer="95" rot="R90"/>
+</segment>
+<segment>
+<pinref part="JP2" gate="G$1" pin="1"/>
+<wire x1="228.6" y1="190.5" x2="228.6" y2="182.88" width="0.1524" layer="91"/>
+<label x="205.74" y="182.88" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="5V_BT_LED" class="0">
@@ -1625,8 +1670,8 @@ Source: &lt;a href="http://www.hirose.co.jp/cataloge_hp/e53600014.pdf"&gt;http:/
 </segment>
 <segment>
 <pinref part="U$1" gate="G$2" pin="5V_BT_LED@11"/>
-<wire x1="314.96" y1="132.08" x2="309.88" y2="132.08" width="0.1524" layer="91"/>
-<label x="307.34" y="132.08" size="1.778" layer="95"/>
+<wire x1="314.96" y1="132.08" x2="299.72" y2="132.08" width="0.1524" layer="91"/>
+<label x="299.72" y="132.08" size="1.778" layer="95"/>
 </segment>
 <segment>
 <pinref part="BT_POWER" gate="G$1" pin="4"/>

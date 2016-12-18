@@ -165,9 +165,9 @@
 <text x="84.1" y="63.4" size="1.778" layer="22" rot="MR0">MAIN_POWER</text>
 <text x="103.8" y="63.9" size="1.778" layer="22" rot="MR0">MAIN_POWER</text>
 <wire x1="121.510525" y1="62.19769375" x2="121.485125" y2="12.1368625" width="0.4064" layer="20"/>
-<text x="41.8248" y="27.3338" size="1.778" layer="22" rot="MR0">BT_POWER</text>
-<text x="22.5962" y="27.0222" size="1.778" layer="22" rot="MR0">BT_SIGNAL</text>
-<text x="69.881" y="25.9566" size="1.778" layer="22" rot="MR0">CAMPOW</text>
+<text x="41.266" y="23.5492" size="1.778" layer="22" rot="MR0">BT_POWER</text>
+<text x="22.774" y="23.7964" size="1.778" layer="22" rot="MR0">BT_SIGNAL</text>
+<text x="65.9186" y="35.0244" size="1.778" layer="22" rot="MR0">CAMPOW</text>
 <text x="71.1874" y="11.2268" size="1.778" layer="22" rot="MR0">CAMDATA</text>
 <text x="41.2954" y="78.4302" size="1.778" layer="22" rot="MR0">S_PIEZO</text>
 <text x="97.7" y="11.4" size="1.778" layer="22" rot="MR0">SC</text>
@@ -807,6 +807,7 @@ Please make sure your boards conform to these design rules.</description>
 </element>
 <element name="JP1" library="pinhead" package="1X02" value="" x="52.0652" y="6.5744" rot="R180"/>
 <element name="PS" library="con-hirose-df13" package="DF13-4P-1.25DSA" value="DF13-4P-1.25DSA" x="61.018" y="77.5974" rot="R90"/>
+<element name="JP2" library="pinhead" package="1X02" value="" x="20.0914" y="6.5278" rot="R180"/>
 </elements>
 <signals>
 <signal name="N$3">
@@ -897,6 +898,7 @@ Please make sure your boards conform to these design rules.</description>
 <via x="30.469840625" y="3.18008125" extent="1-16" drill="0.6"/>
 <via x="20.805134375" y="58.000896875" extent="1-16" drill="0.6"/>
 <via x="16.187415625" y="69.552815625" extent="1-16" drill="0.6"/>
+<contactref element="JP2" pad="2"/>
 </signal>
 <signal name="N$11">
 </signal>
@@ -1079,6 +1081,11 @@ Please make sure your boards conform to these design rules.</description>
 <wire x1="79.0308" y1="36.59" x2="68.4022" y2="47.2186" width="0.8128" layer="1"/>
 <wire x1="68.4022" y1="47.2186" x2="60.105" y2="47.2186" width="0.8128" layer="1"/>
 <wire x1="60.105" y1="47.2186" x2="60.033759375" y2="47.147359375" width="0.8128" layer="1"/>
+<contactref element="JP2" pad="1"/>
+<wire x1="60.033759375" y1="47.147359375" x2="29.951559375" y2="47.147359375" width="0.8128" layer="1"/>
+<wire x1="29.951559375" y1="47.147359375" x2="26.0858" y2="43.2816" width="0.8128" layer="1"/>
+<wire x1="26.0858" y1="43.2816" x2="26.0858" y2="11.2522" width="0.8128" layer="1"/>
+<wire x1="26.0858" y1="11.2522" x2="21.3614" y2="6.5278" width="0.8128" layer="1"/>
 </signal>
 <signal name="5V_BT_LED">
 <contactref element="U$1" pad="52"/>
