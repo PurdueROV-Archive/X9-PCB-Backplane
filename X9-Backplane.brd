@@ -211,6 +211,9 @@
 <text x="53.5686" y="8.8138" size="0.508" layer="22" rot="MR0">D+</text>
 <text x="50.5968" y="8.7376" size="0.508" layer="21">D-</text>
 <text x="51.054" y="8.7376" size="0.508" layer="22" rot="MR0">D-</text>
+<text x="84.074" y="2.032" size="1.778" layer="21">Made by:
+Xi Wu, 
+Ryan McBee</text>
 </plain>
 <libraries>
 <library name="T2I5P">
@@ -1108,4 +1111,10 @@ Created by Nick Molo for the Purdue IEEE ROV Team
 </signals>
 </board>
 </drawing>
+<compatibility>
+<note version="6.3" minversion="6.2.2" severity="warning">
+Since Version 6.2.2 text objects can contain more than one line,
+which will not be processed correctly with this version.
+</note>
+</compatibility>
 </eagle>
