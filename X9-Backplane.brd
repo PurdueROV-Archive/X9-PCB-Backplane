@@ -6,10 +6,10 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="10" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
+<grid distance="1" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
-<layer number="2" name="Route2" color="1" fill="3" visible="no" active="yes"/>
+<layer number="2" name="Route2" color="1" fill="3" visible="yes" active="yes"/>
 <layer number="3" name="Route3" color="4" fill="3" visible="no" active="yes"/>
 <layer number="4" name="Route4" color="1" fill="4" visible="no" active="yes"/>
 <layer number="5" name="Route5" color="4" fill="4" visible="no" active="yes"/>
@@ -798,7 +798,7 @@ Created by Nick Molo for the Purdue IEEE ROV Team
 <element name="S_PIEZO" library="BACKPLANE" package="T2I" value="T2I" x="102.0488" y="29.5166" rot="R90"/>
 <element name="POWER1" library="T2I5P" package="T2I5P" value="T2I5P" x="84.544" y="78.24" rot="R90"/>
 <element name="BT_SIGNAL" library="BACKPLANE" package="T2I" value="T2I" x="35.1246" y="29.083" rot="R90"/>
-<element name="BT_POWER" library="BACKPLANE" package="T2I" value="T2I" x="58.096" y="45.2194"/>
+<element name="BT_POWER" library="BACKPLANE" package="T2I" value="T2I" x="21.647" y="20.5306"/>
 <element name="U$1" library="backplane_to_shield_connector" package="20X2PIN" value="SHIELDCONNECTOR" x="57.8" y="40.4" smashed="yes">
 <attribute name="VALUE" x="6.619" y="22.62" size="1.27" layer="27" ratio="10" rot="R270"/>
 <attribute name="NAME" x="113.934" y="18.81" size="1.27" layer="25" ratio="10" rot="R90"/>
@@ -908,6 +908,11 @@ Created by Nick Molo for the Purdue IEEE ROV Team
 <via x="39.867840625" y="39.75608125" extent="1-16" drill="0.6"/>
 <via x="83.047840625" y="17.91208125" extent="1-16" drill="0.6"/>
 <via x="12.181840625" y="42.04208125" extent="1-16" drill="0.6"/>
+<via x="67.503040625" y="43.89628125" extent="1-16" drill="0.6"/>
+<via x="77.967840625" y="51.61788125" extent="1-16" drill="0.6"/>
+<via x="89.880440625" y="44.20108125" extent="1-16" drill="0.6"/>
+<via x="101.335840625" y="12.55268125" extent="1-16" drill="0.6"/>
+<via x="82.539840625" y="4.62788125" extent="1-16" drill="0.6"/>
 </signal>
 <signal name="N$11">
 </signal>
@@ -1105,9 +1110,15 @@ Created by Nick Molo for the Purdue IEEE ROV Team
 <contactref element="BT_POWER" pad="4"/>
 <wire x1="118.76" y1="26.43" x2="116.22" y2="26.43" width="0.8128" layer="16"/>
 <contactref element="BT_POWER" pad="3"/>
-<wire x1="116.22" y1="26.43" x2="93.7854" y2="26.43" width="0.8128" layer="1"/>
-<wire x1="93.7854" y1="26.43" x2="72.196" y2="48.0194" width="0.8128" layer="1"/>
-<wire x1="72.196" y1="48.0194" x2="70.196" y2="48.0194" width="0.8128" layer="1"/>
+<wire x1="35.747" y1="23.3306" x2="33.747" y2="23.3306" width="0.8128" layer="1"/>
+<wire x1="35.747" y1="23.3306" x2="35.747" y2="21.53" width="0.8128" layer="16"/>
+<wire x1="35.747" y1="21.53" x2="41.0464" y2="16.2306" width="0.8128" layer="16"/>
+<wire x1="41.0464" y1="16.2306" x2="75.184" y2="16.2306" width="0.8128" layer="16"/>
+<wire x1="75.184" y1="16.2306" x2="82.6262" y2="23.6728" width="0.8128" layer="16"/>
+<wire x1="82.6262" y1="23.6728" x2="104.6734" y2="23.6728" width="0.8128" layer="16"/>
+<wire x1="104.6734" y1="23.6728" x2="107.4674" y2="26.4668" width="0.8128" layer="16"/>
+<wire x1="107.4674" y1="26.4668" x2="116.1832" y2="26.4668" width="0.8128" layer="16"/>
+<wire x1="116.1832" y1="26.4668" x2="116.22" y2="26.43" width="0.8128" layer="16"/>
 </signal>
 <signal name="RX_BT">
 <contactref element="U$1" pad="22"/>
