@@ -1226,6 +1226,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="POW_COM_USB" library="BACKPLANE" deviceset="T2I" device=""/>
 <part name="JP3" library="pinhead" deviceset="PINHD-1X2" device=""/>
 <part name="POW_COM_I2C" library="BACKPLANE" deviceset="T2I" device=""/>
+<part name="SC1" library="BACKPLANE" deviceset="T2I" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -1278,6 +1279,9 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <instance part="JP3" gate="G$1" x="33.02" y="142.24" rot="R270"/>
 <instance part="POW_COM_I2C" gate="G$1" x="68.58" y="167.64" smashed="yes" rot="R180">
 <attribute name="NAME" x="71.12" y="170.18" size="1.778" layer="95" rot="R180"/>
+</instance>
+<instance part="SC1" gate="G$1" x="187.96" y="55.88" smashed="yes">
+<attribute name="NAME" x="182.88" y="60.96" size="1.778" layer="95"/>
 </instance>
 </instances>
 <busses>
@@ -1336,6 +1340,11 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <pinref part="BT_SIGNAL" gate="G$1" pin="4"/>
 <wire x1="223.52" y1="68.58" x2="223.52" y2="76.2" width="0.1524" layer="91"/>
 <label x="223.52" y="71.12" size="1.778" layer="95" rot="R90"/>
+</segment>
+<segment>
+<pinref part="SC1" gate="G$1" pin="4"/>
+<wire x1="198.12" y1="68.58" x2="198.12" y2="76.2" width="0.1524" layer="91"/>
+<label x="198.12" y="68.58" size="1.778" layer="95" rot="R90"/>
 </segment>
 </net>
 <net name="GND" class="0">
@@ -1457,6 +1466,11 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <wire x1="231.14" y1="190.5" x2="231.14" y2="182.88" width="0.1524" layer="91"/>
 <pinref part="GND3" gate="1" pin="GND"/>
 </segment>
+<segment>
+<pinref part="SC1" gate="G$1" pin="3"/>
+<wire x1="195.58" y1="68.58" x2="195.58" y2="76.2" width="0.1524" layer="91"/>
+<label x="195.58" y="68.58" size="1.778" layer="95" rot="R90"/>
+</segment>
 </net>
 <net name="TX_H" class="0">
 <segment>
@@ -1468,6 +1482,11 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <pinref part="U$1" gate="G$1" pin="A@34"/>
 <wire x1="373.38" y1="154.94" x2="381" y2="154.94" width="0.1524" layer="91"/>
 <label x="373.38" y="154.94" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="SC1" gate="G$1" pin="1"/>
+<wire x1="190.5" y1="68.58" x2="190.5" y2="76.2" width="0.1524" layer="91"/>
+<label x="190.5" y="68.58" size="1.778" layer="95" rot="R90"/>
 </segment>
 </net>
 <net name="3V3_PIEZO" class="0">
@@ -1577,6 +1596,11 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <pinref part="U$1" gate="G$1" pin="Y@28"/>
 <wire x1="373.38" y1="147.32" x2="381" y2="147.32" width="0.1524" layer="91"/>
 <label x="373.38" y="147.32" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="SC1" gate="G$1" pin="2"/>
+<wire x1="193.04" y1="68.58" x2="193.04" y2="76.2" width="0.1524" layer="91"/>
+<label x="193.04" y="68.58" size="1.778" layer="95" rot="R90"/>
 </segment>
 </net>
 <net name="GND_PIEZO" class="0">

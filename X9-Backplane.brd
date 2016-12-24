@@ -9,7 +9,7 @@
 <grid distance="1" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
-<layer number="2" name="Route2" color="1" fill="3" visible="yes" active="yes"/>
+<layer number="2" name="Route2" color="1" fill="3" visible="no" active="yes"/>
 <layer number="3" name="Route3" color="4" fill="3" visible="no" active="yes"/>
 <layer number="4" name="Route4" color="1" fill="4" visible="no" active="yes"/>
 <layer number="5" name="Route5" color="4" fill="4" visible="no" active="yes"/>
@@ -811,6 +811,7 @@ Created by Nick Molo for the Purdue IEEE ROV Team
 <element name="POW_COM_USB" library="BACKPLANE" package="T2I" value="T2I" x="48.514" y="56.134" rot="R90"/>
 <element name="JP3" library="pinhead" package="1X02" value="" x="45.466" y="5.08"/>
 <element name="POW_COM_I2C" library="BACKPLANE" package="T2I" value="T2I" x="34.544" y="56.134" rot="R90"/>
+<element name="SC1" library="BACKPLANE" package="T2I" value="T2I" x="17.145" y="5.7658" rot="R90"/>
 </elements>
 <signals>
 <signal name="N$3">
@@ -913,6 +914,7 @@ Created by Nick Molo for the Purdue IEEE ROV Team
 <via x="89.880440625" y="44.20108125" extent="1-16" drill="0.6"/>
 <via x="101.335840625" y="12.55268125" extent="1-16" drill="0.6"/>
 <via x="82.539840625" y="4.62788125" extent="1-16" drill="0.6"/>
+<contactref element="SC1" pad="3"/>
 </signal>
 <signal name="N$11">
 </signal>
@@ -955,6 +957,18 @@ Created by Nick Molo for the Purdue IEEE ROV Team
 <wire x1="11.684" y1="48.514" x2="17.018" y2="43.18" width="0.8128" layer="1"/>
 <wire x1="17.018" y1="43.18" x2="32.3216" y2="43.18" width="0.8128" layer="1"/>
 <wire x1="32.3216" y1="43.18" x2="32.3246" y2="43.183" width="0.8128" layer="1"/>
+<wire x1="19.4056" y1="25.6286" x2="27.2542" y2="33.4772" width="0.8128" layer="1"/>
+<wire x1="27.2542" y1="33.4772" x2="34.6202" y2="33.4772" width="0.8128" layer="1"/>
+<wire x1="34.6202" y1="33.4772" x2="37.3888" y2="36.2458" width="0.8128" layer="1"/>
+<wire x1="37.3888" y1="36.2458" x2="37.3888" y2="39.878" width="0.8128" layer="1"/>
+<wire x1="37.3888" y1="39.878" x2="34.1122" y2="43.1546" width="0.8128" layer="1"/>
+<wire x1="34.1122" y1="43.1546" x2="32.353" y2="43.1546" width="0.8128" layer="1"/>
+<wire x1="32.353" y1="43.1546" x2="32.3246" y2="43.183" width="0.8128" layer="1"/>
+<contactref element="SC1" pad="4"/>
+<wire x1="19.4056" y1="25.6286" x2="19.4056" y2="21.7932" width="0.8128" layer="1"/>
+<wire x1="19.4056" y1="21.7932" x2="17.4752" y2="19.8628" width="0.8128" layer="1"/>
+<wire x1="17.4752" y1="19.8628" x2="14.348" y2="19.8628" width="0.8128" layer="1"/>
+<wire x1="14.348" y1="19.8628" x2="14.345" y2="19.8658" width="0.8128" layer="1"/>
 </signal>
 <signal name="TX_H">
 <contactref element="SC" pad="1"/>
@@ -963,8 +977,11 @@ Created by Nick Molo for the Purdue IEEE ROV Team
 <wire x1="4.46" y1="54.214" x2="8.636" y2="50.038" width="0.3048" layer="16"/>
 <wire x1="8.636" y1="50.038" x2="8.636" y2="15.494" width="0.3048" layer="16"/>
 <wire x1="8.636" y1="15.494" x2="10.414" y2="13.716" width="0.3048" layer="16"/>
-<wire x1="10.414" y1="13.716" x2="90.6908" y2="13.716" width="0.3048" layer="16"/>
-<wire x1="90.6908" y1="13.716" x2="90.795" y2="13.8202" width="0.3048" layer="16"/>
+<contactref element="SC1" pad="1"/>
+<wire x1="10.414" y1="13.716" x2="14.1952" y2="13.716" width="0.3048" layer="16"/>
+<wire x1="14.1952" y1="13.716" x2="14.345" y2="13.8658" width="0.3048" layer="16"/>
+<wire x1="14.345" y1="13.8658" x2="90.7494" y2="13.8658" width="0.3048" layer="16"/>
+<wire x1="90.7494" y1="13.8658" x2="90.795" y2="13.8202" width="0.3048" layer="16"/>
 </signal>
 <signal name="3V3_PIEZO">
 <contactref element="U$1" pad="63"/>
@@ -983,6 +1000,7 @@ Created by Nick Molo for the Purdue IEEE ROV Team
 <wire x1="4.46" y1="51.674" x2="7.62" y2="48.514" width="0.3048" layer="16"/>
 <wire x1="7.62" y1="48.514" x2="7.62" y2="14.732" width="0.3048" layer="16"/>
 <wire x1="7.62" y1="14.732" x2="10.414" y2="11.938" width="0.3048" layer="16"/>
+<wire x1="90.7604" y1="11.7856" x2="90.795" y2="11.8202" width="0.3048" layer="16"/>
 <wire x1="10.414" y1="11.938" x2="90.6772" y2="11.938" width="0.3048" layer="16"/>
 <wire x1="90.6772" y1="11.938" x2="90.795" y2="11.8202" width="0.3048" layer="16"/>
 </signal>
@@ -1024,6 +1042,7 @@ Created by Nick Molo for the Purdue IEEE ROV Team
 <wire x1="4.558" y1="49.29" x2="6.858" y2="46.99" width="0.3048" layer="16"/>
 <wire x1="6.858" y1="46.99" x2="6.858" y2="13.208" width="0.3048" layer="16"/>
 <wire x1="6.858" y1="13.208" x2="10.414" y2="9.652" width="0.3048" layer="16"/>
+<wire x1="90.76" y1="9.8552" x2="90.795" y2="9.8202" width="0.3048" layer="16"/>
 <wire x1="10.414" y1="9.652" x2="90.6268" y2="9.652" width="0.3048" layer="16"/>
 <wire x1="90.6268" y1="9.652" x2="90.795" y2="9.8202" width="0.3048" layer="16"/>
 </signal>
@@ -1034,8 +1053,16 @@ Created by Nick Molo for the Purdue IEEE ROV Team
 <wire x1="5.828" y1="46.75" x2="6.096" y2="46.482" width="0.3048" layer="16"/>
 <wire x1="6.096" y1="46.482" x2="6.096" y2="12.446" width="0.3048" layer="16"/>
 <wire x1="6.096" y1="12.446" x2="10.668" y2="7.874" width="0.3048" layer="16"/>
-<wire x1="10.668" y1="7.874" x2="90.7412" y2="7.874" width="0.3048" layer="16"/>
 <wire x1="90.7412" y1="7.874" x2="90.795" y2="7.8202" width="0.3048" layer="16"/>
+<wire x1="90.6904" y1="7.9248" x2="90.795" y2="7.8202" width="0.3048" layer="16"/>
+<contactref element="SC1" pad="2"/>
+<wire x1="14.345" y1="15.8658" x2="13.275" y2="15.8658" width="0.3048" layer="1"/>
+<wire x1="13.275" y1="15.8658" x2="12.5222" y2="15.113" width="0.3048" layer="1"/>
+<wire x1="10.668" y1="7.874" x2="12.5222" y2="7.874" width="0.3048" layer="16"/>
+<via x="12.5222" y="7.874" extent="1-16" drill="0.6"/>
+<wire x1="12.5222" y1="7.874" x2="12.5222" y2="15.113" width="0.3048" layer="1"/>
+<wire x1="90.6904" y1="7.9248" x2="12.573" y2="7.9248" width="0.3048" layer="16"/>
+<wire x1="12.573" y1="7.9248" x2="12.5222" y2="7.874" width="0.3048" layer="16"/>
 </signal>
 <signal name="GND_PIEZO">
 <contactref element="U$1" pad="61"/>
