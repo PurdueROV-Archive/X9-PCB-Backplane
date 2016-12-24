@@ -1222,13 +1222,20 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="JP1" library="pinhead" deviceset="PINHD-1X2" device=""/>
 <part name="GND2" library="supply1" deviceset="GND" device=""/>
 <part name="PS" library="con-hirose-df13" deviceset="DF13-4P-1.25" device="DSA"/>
-<part name="JP2" library="pinhead" deviceset="PINHD-1X2" device=""/>
 <part name="GND3" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
+<part name="POW_COM_USB" library="BACKPLANE" deviceset="T2I" device=""/>
+<part name="JP3" library="pinhead" deviceset="PINHD-1X2" device=""/>
+<part name="POW_COM_I2C" library="BACKPLANE" deviceset="T2I" device=""/>
 </parts>
 <sheets>
 <sheet>
 <plain>
-<text x="223.52" y="200.66" size="1.778" layer="91">debugging pins</text>
+<text x="195.58" y="200.66" size="7.62" layer="91">debugging pins</text>
+<text x="208.28" y="88.9" size="7.62" layer="91">Blue tooth</text>
+<text x="104.14" y="116.84" size="7.62" layer="91">Cammera tube</text>
+<text x="20.32" y="198.12" size="7.62" layer="91">Power box</text>
+<text x="101.6" y="195.58" size="7.62" layer="91">Pressure Sensor</text>
+<text x="25.4" y="101.6" size="7.62" layer="91">Sonar</text>
 </plain>
 <instances>
 <instance part="FRAME2" gate="G$1" x="0" y="0"/>
@@ -1236,50 +1243,67 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <instance part="FRAME3" gate="G$1" x="279.4" y="0"/>
 <instance part="FRAME3" gate="G$2" x="452.12" y="0"/>
 <instance part="POWER" gate="&gt;NAME" x="33.02" y="187.96"/>
-<instance part="CAMDATA" gate="G$1" x="33.02" y="114.3"/>
-<instance part="CAMPOW" gate="G$1" x="33.02" y="93.98"/>
-<instance part="SC" gate="G$1" x="33.02" y="71.12"/>
-<instance part="S_PIEZO" gate="G$1" x="33.02" y="38.1"/>
+<instance part="CAMDATA" gate="G$1" x="129.54" y="81.28" smashed="yes">
+<attribute name="NAME" x="121.92" y="88.9" size="1.778" layer="95"/>
+</instance>
+<instance part="CAMPOW" gate="G$1" x="129.54" y="43.18" smashed="yes">
+<attribute name="NAME" x="121.92" y="50.8" size="1.778" layer="95"/>
+</instance>
+<instance part="SC" gate="G$1" x="33.02" y="71.12" smashed="yes">
+<attribute name="NAME" x="27.94" y="76.2" size="1.778" layer="95"/>
+</instance>
+<instance part="S_PIEZO" gate="G$1" x="33.02" y="38.1" smashed="yes">
+<attribute name="NAME" x="25.4" y="45.72" size="1.778" layer="95"/>
+</instance>
 <instance part="POWER1" gate="&gt;NAME" x="63.5" y="187.96"/>
-<instance part="BT_SIGNAL" gate="G$1" x="60.96" y="60.96"/>
-<instance part="BT_POWER" gate="G$1" x="83.82" y="60.96"/>
+<instance part="BT_SIGNAL" gate="G$1" x="213.36" y="55.88" smashed="yes">
+<attribute name="NAME" x="205.74" y="63.5" size="1.778" layer="95"/>
+</instance>
+<instance part="BT_POWER" gate="G$1" x="236.22" y="55.88" smashed="yes">
+<attribute name="NAME" x="228.6" y="63.5" size="1.778" layer="95"/>
+</instance>
 <instance part="U$1" gate="G$2" x="322.58" y="137.16"/>
 <instance part="U$1" gate="G$1" x="365.76" y="137.16"/>
 <instance part="P+1" gate="1" x="309.88" y="170.18"/>
 <instance part="GND1" gate="1" x="307.34" y="106.68"/>
-<instance part="JP1" gate="G$1" x="38.1" y="144.78" rot="R90"/>
+<instance part="JP1" gate="G$1" x="134.62" y="109.22" rot="R90"/>
 <instance part="GND2" gate="1" x="353.06" y="101.6"/>
-<instance part="PS" gate="G$1" x="71.12" y="116.84" smashed="yes" rot="R270">
-<attribute name="NAME" x="76.2" y="118.745" size="1.778" layer="95" rot="R270"/>
-<attribute name="VALUE" x="61.9125" y="118.745" size="1.778" layer="96" rot="R270"/>
+<instance part="PS" gate="G$1" x="134.62" y="170.18" smashed="yes" rot="R270">
+<attribute name="NAME" x="139.7" y="172.085" size="1.778" layer="95" rot="R270"/>
 </instance>
-<instance part="JP2" gate="G$1" x="231.14" y="193.04" rot="R90"/>
 <instance part="GND3" gate="1" x="231.14" y="180.34"/>
+<instance part="POW_COM_USB" gate="G$1" x="38.1" y="167.64" smashed="yes" rot="R180">
+<attribute name="NAME" x="38.1" y="170.18" size="1.778" layer="95" rot="R180"/>
+</instance>
+<instance part="JP3" gate="G$1" x="33.02" y="142.24" rot="R270"/>
+<instance part="POW_COM_I2C" gate="G$1" x="68.58" y="167.64" smashed="yes" rot="R180">
+<attribute name="NAME" x="71.12" y="170.18" size="1.778" layer="95" rot="R180"/>
+</instance>
 </instances>
 <busses>
 </busses>
 <nets>
-<net name="D+" class="0">
+<net name="CAM_D+" class="0">
 <segment>
 <pinref part="CAMDATA" gate="G$1" pin="1"/>
-<label x="35.56" y="129.54" size="1.778" layer="95" rot="R90"/>
+<label x="132.08" y="93.98" size="1.778" layer="95" rot="R90"/>
 <pinref part="JP1" gate="G$1" pin="1"/>
-<wire x1="35.56" y1="127" x2="35.56" y2="142.24" width="0.1524" layer="91"/>
+<wire x1="132.08" y1="93.98" x2="132.08" y2="106.68" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="D-" class="0">
+<net name="CAM_D-" class="0">
 <segment>
 <pinref part="CAMDATA" gate="G$1" pin="2"/>
-<label x="38.1" y="129.54" size="1.778" layer="95" rot="R90"/>
-<wire x1="38.1" y1="127" x2="38.1" y2="142.24" width="0.1524" layer="91"/>
+<label x="134.62" y="93.98" size="1.778" layer="95" rot="R90"/>
+<wire x1="134.62" y1="93.98" x2="134.62" y2="106.68" width="0.1524" layer="91"/>
 <pinref part="JP1" gate="G$1" pin="2"/>
 </segment>
 </net>
 <net name="5V_LED" class="0">
 <segment>
 <pinref part="CAMDATA" gate="G$1" pin="3"/>
-<wire x1="40.64" y1="127" x2="40.64" y2="134.62" width="0.1524" layer="91"/>
-<label x="40.64" y="129.54" size="1.778" layer="95" rot="R90"/>
+<wire x1="137.16" y1="93.98" x2="137.16" y2="96.52" width="0.1524" layer="91"/>
+<label x="137.16" y="93.98" size="1.778" layer="95" rot="R90"/>
 </segment>
 <segment>
 <pinref part="U$1" gate="G$2" pin="5V_LED@14"/>
@@ -1305,35 +1329,35 @@ You are welcome to use this library for commercial purposes. For attribution, we
 </segment>
 <segment>
 <pinref part="PS" gate="G$1" pin="1"/>
-<wire x1="73.66" y1="121.92" x2="73.66" y2="127" width="0.1524" layer="91"/>
-<label x="73.66" y="129.54" size="1.778" layer="95" rot="R270"/>
+<wire x1="137.16" y1="175.26" x2="137.16" y2="180.34" width="0.1524" layer="91"/>
+<label x="137.16" y="182.88" size="1.778" layer="95" rot="R270"/>
 </segment>
 <segment>
 <pinref part="BT_SIGNAL" gate="G$1" pin="4"/>
-<wire x1="71.12" y1="73.66" x2="71.12" y2="81.28" width="0.1524" layer="91"/>
-<label x="71.12" y="76.2" size="1.778" layer="95" rot="R90"/>
+<wire x1="223.52" y1="68.58" x2="223.52" y2="76.2" width="0.1524" layer="91"/>
+<label x="223.52" y="71.12" size="1.778" layer="95" rot="R90"/>
 </segment>
 </net>
 <net name="GND" class="0">
 <segment>
 <pinref part="CAMPOW" gate="G$1" pin="3"/>
-<wire x1="40.64" y1="106.68" x2="40.64" y2="111.76" width="0.1524" layer="91"/>
-<label x="40.64" y="106.68" size="1.778" layer="95" rot="R90"/>
+<wire x1="137.16" y1="55.88" x2="137.16" y2="63.5" width="0.1524" layer="91"/>
+<label x="137.16" y="55.88" size="1.778" layer="95" rot="R90"/>
 </segment>
 <segment>
 <pinref part="CAMPOW" gate="G$1" pin="4"/>
-<wire x1="43.18" y1="106.68" x2="43.18" y2="111.76" width="0.1524" layer="91"/>
-<label x="43.18" y="106.68" size="1.778" layer="95" rot="R90"/>
+<wire x1="139.7" y1="55.88" x2="139.7" y2="60.96" width="0.1524" layer="91"/>
+<label x="139.7" y="55.88" size="1.778" layer="95" rot="R90"/>
 </segment>
 <segment>
 <pinref part="BT_POWER" gate="G$1" pin="1"/>
-<wire x1="86.36" y1="73.66" x2="86.36" y2="78.74" width="0.1524" layer="91"/>
-<label x="86.36" y="73.66" size="1.778" layer="95" rot="R90"/>
+<wire x1="238.76" y1="68.58" x2="238.76" y2="73.66" width="0.1524" layer="91"/>
+<label x="238.76" y="68.58" size="1.778" layer="95" rot="R90"/>
 </segment>
 <segment>
 <pinref part="BT_POWER" gate="G$1" pin="2"/>
-<wire x1="88.9" y1="73.66" x2="88.9" y2="78.74" width="0.1524" layer="91"/>
-<label x="88.9" y="73.66" size="1.778" layer="95" rot="R90"/>
+<wire x1="241.3" y1="68.58" x2="241.3" y2="73.66" width="0.1524" layer="91"/>
+<label x="241.3" y="68.58" size="1.778" layer="95" rot="R90"/>
 </segment>
 <segment>
 <pinref part="POWER1" gate="&gt;NAME" pin="1"/>
@@ -1421,16 +1445,15 @@ You are welcome to use this library for commercial purposes. For attribution, we
 </segment>
 <segment>
 <pinref part="PS" gate="G$1" pin="4"/>
-<wire x1="66.04" y1="121.92" x2="66.04" y2="127" width="0.1524" layer="91"/>
-<label x="66.04" y="129.54" size="1.778" layer="95" rot="R270"/>
+<wire x1="129.54" y1="175.26" x2="129.54" y2="180.34" width="0.1524" layer="91"/>
+<label x="129.54" y="182.88" size="1.778" layer="95" rot="R270"/>
 </segment>
 <segment>
 <pinref part="BT_SIGNAL" gate="G$1" pin="3"/>
-<wire x1="68.58" y1="73.66" x2="68.58" y2="81.28" width="0.1524" layer="91"/>
-<label x="68.58" y="73.66" size="1.778" layer="95" rot="R90"/>
+<wire x1="220.98" y1="68.58" x2="220.98" y2="76.2" width="0.1524" layer="91"/>
+<label x="220.98" y="68.58" size="1.778" layer="95" rot="R90"/>
 </segment>
 <segment>
-<pinref part="JP2" gate="G$1" pin="2"/>
 <wire x1="231.14" y1="190.5" x2="231.14" y2="182.88" width="0.1524" layer="91"/>
 <pinref part="GND3" gate="1" pin="GND"/>
 </segment>
@@ -1449,16 +1472,6 @@ You are welcome to use this library for commercial purposes. For attribution, we
 </net>
 <net name="3V3_PIEZO" class="0">
 <segment>
-<pinref part="S_PIEZO" gate="G$1" pin="1"/>
-<wire x1="35.56" y1="50.8" x2="35.56" y2="71.12" width="0.1524" layer="91"/>
-<label x="35.56" y="53.34" size="1.778" layer="95" rot="R90"/>
-</segment>
-<segment>
-<pinref part="S_PIEZO" gate="G$1" pin="2"/>
-<wire x1="38.1" y1="50.8" x2="38.1" y2="71.12" width="0.1524" layer="91"/>
-<label x="38.1" y="53.34" size="1.778" layer="95" rot="R90"/>
-</segment>
-<segment>
 <pinref part="U$1" gate="G$2" pin="3V3_PIEZO@23"/>
 <wire x1="314.96" y1="147.32" x2="307.34" y2="147.32" width="0.1524" layer="91"/>
 <label x="302.26" y="147.32" size="1.778" layer="95"/>
@@ -1467,6 +1480,16 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <pinref part="U$1" gate="G$2" pin="3V3_PIEZO@24"/>
 <wire x1="330.2" y1="147.32" x2="332.74" y2="147.32" width="0.1524" layer="91"/>
 <label x="330.2" y="147.32" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="S_PIEZO" gate="G$1" pin="3"/>
+<wire x1="40.64" y1="50.8" x2="40.64" y2="71.12" width="0.1524" layer="91"/>
+<label x="40.64" y="53.34" size="1.778" layer="95" rot="R90"/>
+</segment>
+<segment>
+<pinref part="S_PIEZO" gate="G$1" pin="4"/>
+<wire x1="43.18" y1="50.8" x2="43.18" y2="71.12" width="0.1524" layer="91"/>
+<label x="43.18" y="53.34" size="1.778" layer="95" rot="R90"/>
 </segment>
 </net>
 <net name="TX_L" class="0">
@@ -1489,8 +1512,13 @@ You are welcome to use this library for commercial purposes. For attribution, we
 </segment>
 <segment>
 <pinref part="PS" gate="G$1" pin="2"/>
-<wire x1="71.12" y1="121.92" x2="71.12" y2="127" width="0.1524" layer="91"/>
-<label x="71.12" y="129.54" size="1.778" layer="95" rot="R270"/>
+<wire x1="134.62" y1="175.26" x2="134.62" y2="180.34" width="0.1524" layer="91"/>
+<label x="134.62" y="182.88" size="1.778" layer="95" rot="R270"/>
+</segment>
+<segment>
+<pinref part="POW_COM_I2C" gate="G$1" pin="1"/>
+<wire x1="66.04" y1="154.94" x2="66.04" y2="147.32" width="0.1524" layer="91"/>
+<label x="66.04" y="147.32" size="1.778" layer="95" rot="R90"/>
 </segment>
 </net>
 <net name="SDA" class="0">
@@ -1501,15 +1529,20 @@ You are welcome to use this library for commercial purposes. For attribution, we
 </segment>
 <segment>
 <pinref part="PS" gate="G$1" pin="3"/>
-<wire x1="68.58" y1="121.92" x2="68.58" y2="127" width="0.1524" layer="91"/>
-<label x="68.58" y="129.54" size="1.778" layer="95" rot="R270"/>
+<wire x1="132.08" y1="175.26" x2="132.08" y2="180.34" width="0.1524" layer="91"/>
+<label x="132.08" y="182.88" size="1.778" layer="95" rot="R270"/>
+</segment>
+<segment>
+<pinref part="POW_COM_I2C" gate="G$1" pin="2"/>
+<wire x1="63.5" y1="154.94" x2="63.5" y2="147.32" width="0.1524" layer="91"/>
+<label x="63.5" y="147.32" size="1.778" layer="95" rot="R90"/>
 </segment>
 </net>
 <net name="5V_LASER" class="0">
 <segment>
 <pinref part="CAMPOW" gate="G$1" pin="2"/>
-<wire x1="38.1" y1="106.68" x2="38.1" y2="111.76" width="0.1524" layer="91"/>
-<label x="38.1" y="106.68" size="1.778" layer="95" rot="R90"/>
+<wire x1="134.62" y1="55.88" x2="134.62" y2="60.96" width="0.1524" layer="91"/>
+<label x="134.62" y="55.88" size="1.778" layer="95" rot="R90"/>
 </segment>
 <segment>
 <pinref part="U$1" gate="G$2" pin="5V_LASER@16"/>
@@ -1548,16 +1581,6 @@ You are welcome to use this library for commercial purposes. For attribution, we
 </net>
 <net name="GND_PIEZO" class="0">
 <segment>
-<pinref part="S_PIEZO" gate="G$1" pin="3"/>
-<wire x1="40.64" y1="50.8" x2="40.64" y2="71.12" width="0.1524" layer="91"/>
-<label x="40.64" y="53.34" size="1.778" layer="95" rot="R90"/>
-</segment>
-<segment>
-<pinref part="S_PIEZO" gate="G$1" pin="4"/>
-<wire x1="43.18" y1="50.8" x2="43.18" y2="71.12" width="0.1524" layer="91"/>
-<label x="43.18" y="53.34" size="1.778" layer="95" rot="R90"/>
-</segment>
-<segment>
 <pinref part="U$1" gate="G$2" pin="GND_PIEZO@21"/>
 <wire x1="314.96" y1="144.78" x2="307.34" y2="144.78" width="0.1524" layer="91"/>
 <label x="302.26" y="144.78" size="1.778" layer="95"/>
@@ -1566,6 +1589,16 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <pinref part="U$1" gate="G$2" pin="GND_PIEZO@22"/>
 <wire x1="330.2" y1="144.78" x2="332.74" y2="144.78" width="0.1524" layer="91"/>
 <label x="330.2" y="144.78" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="S_PIEZO" gate="G$1" pin="1"/>
+<wire x1="35.56" y1="50.8" x2="35.56" y2="71.12" width="0.1524" layer="91"/>
+<label x="35.56" y="53.34" size="1.778" layer="95" rot="R90"/>
+</segment>
+<segment>
+<pinref part="S_PIEZO" gate="G$1" pin="2"/>
+<wire x1="38.1" y1="50.8" x2="38.1" y2="71.12" width="0.1524" layer="91"/>
+<label x="38.1" y="53.34" size="1.778" layer="95" rot="R90"/>
 </segment>
 </net>
 <net name="SERVO_PWM" class="0">
@@ -1576,8 +1609,8 @@ You are welcome to use this library for commercial purposes. For attribution, we
 </segment>
 <segment>
 <pinref part="CAMDATA" gate="G$1" pin="4"/>
-<wire x1="43.18" y1="127" x2="43.18" y2="134.62" width="0.1524" layer="91"/>
-<label x="43.18" y="129.54" size="1.778" layer="95" rot="R90"/>
+<wire x1="139.7" y1="93.98" x2="139.7" y2="96.52" width="0.1524" layer="91"/>
+<label x="139.7" y="93.98" size="1.778" layer="95" rot="R90"/>
 </segment>
 </net>
 <net name="+12V" class="0">
@@ -1653,11 +1686,10 @@ You are welcome to use this library for commercial purposes. For attribution, we
 </segment>
 <segment>
 <pinref part="CAMPOW" gate="G$1" pin="1"/>
-<wire x1="35.56" y1="106.68" x2="35.56" y2="111.76" width="0.1524" layer="91"/>
-<label x="35.56" y="106.68" size="1.778" layer="95" rot="R90"/>
+<wire x1="132.08" y1="55.88" x2="132.08" y2="60.96" width="0.1524" layer="91"/>
+<label x="132.08" y="55.88" size="1.778" layer="95" rot="R90"/>
 </segment>
 <segment>
-<pinref part="JP2" gate="G$1" pin="1"/>
 <wire x1="228.6" y1="190.5" x2="228.6" y2="182.88" width="0.1524" layer="91"/>
 <label x="205.74" y="182.88" size="1.778" layer="95"/>
 </segment>
@@ -1675,13 +1707,13 @@ You are welcome to use this library for commercial purposes. For attribution, we
 </segment>
 <segment>
 <pinref part="BT_POWER" gate="G$1" pin="4"/>
-<wire x1="93.98" y1="73.66" x2="93.98" y2="78.74" width="0.1524" layer="91"/>
-<label x="93.98" y="76.2" size="1.778" layer="95" rot="R90"/>
+<wire x1="246.38" y1="68.58" x2="246.38" y2="73.66" width="0.1524" layer="91"/>
+<label x="246.38" y="71.12" size="1.778" layer="95" rot="R90"/>
 </segment>
 <segment>
 <pinref part="BT_POWER" gate="G$1" pin="3"/>
-<wire x1="91.44" y1="73.66" x2="91.44" y2="78.74" width="0.1524" layer="91"/>
-<label x="91.44" y="73.66" size="1.778" layer="95" rot="R90"/>
+<wire x1="243.84" y1="68.58" x2="243.84" y2="73.66" width="0.1524" layer="91"/>
+<label x="243.84" y="68.58" size="1.778" layer="95" rot="R90"/>
 </segment>
 </net>
 <net name="RX_BT" class="0">
@@ -1692,8 +1724,8 @@ You are welcome to use this library for commercial purposes. For attribution, we
 </segment>
 <segment>
 <pinref part="BT_SIGNAL" gate="G$1" pin="2"/>
-<wire x1="66.04" y1="73.66" x2="66.04" y2="81.28" width="0.1524" layer="91"/>
-<label x="66.04" y="73.66" size="1.778" layer="95" rot="R90"/>
+<wire x1="218.44" y1="68.58" x2="218.44" y2="76.2" width="0.1524" layer="91"/>
+<label x="218.44" y="68.58" size="1.778" layer="95" rot="R90"/>
 </segment>
 </net>
 <net name="TX_BT" class="0">
@@ -1704,8 +1736,24 @@ You are welcome to use this library for commercial purposes. For attribution, we
 </segment>
 <segment>
 <pinref part="BT_SIGNAL" gate="G$1" pin="1"/>
-<wire x1="63.5" y1="73.66" x2="63.5" y2="81.28" width="0.1524" layer="91"/>
-<label x="63.5" y="76.2" size="1.778" layer="95" rot="R90"/>
+<wire x1="215.9" y1="68.58" x2="215.9" y2="76.2" width="0.1524" layer="91"/>
+<label x="215.9" y="71.12" size="1.778" layer="95" rot="R90"/>
+</segment>
+</net>
+<net name="POW_D+" class="0">
+<segment>
+<pinref part="POW_COM_USB" gate="G$1" pin="1"/>
+<pinref part="JP3" gate="G$1" pin="1"/>
+<wire x1="35.56" y1="144.78" x2="35.56" y2="154.94" width="0.1524" layer="91"/>
+<label x="33.02" y="154.94" size="1.778" layer="95" rot="R270"/>
+</segment>
+</net>
+<net name="POW_D-" class="0">
+<segment>
+<pinref part="POW_COM_USB" gate="G$1" pin="2"/>
+<pinref part="JP3" gate="G$1" pin="2"/>
+<wire x1="33.02" y1="144.78" x2="33.02" y2="154.94" width="0.1524" layer="91"/>
+<label x="30.48" y="154.94" size="1.778" layer="95" rot="R270"/>
 </segment>
 </net>
 </nets>
