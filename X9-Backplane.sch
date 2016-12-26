@@ -1163,39 +1163,6 @@ Source: &lt;a href="http://www.hirose.co.jp/cataloge_hp/e53600014.pdf"&gt;http:/
 </deviceset>
 </devicesets>
 </library>
-<library name="SparkFun-Aesthetics">
-<description>&lt;h3&gt;SparkFun Electronics' preferred foot prints&lt;/h3&gt;
-In this library you'll find non-functional items- supply symbols, logos, notations, frame blocks, etc.&lt;br&gt;&lt;br&gt;
-We've spent an enormous amount of time creating and checking these footprints and parts, but it is the end user's responsibility to ensure correctness and suitablity for a given componet or application. If you enjoy using this library, please buy one of our products at www.sparkfun.com.
-&lt;br&gt;&lt;br&gt;
-&lt;b&gt;Licensing:&lt;/b&gt; Creative Commons ShareAlike 4.0 International - https://creativecommons.org/licenses/by-sa/4.0/ 
-&lt;br&gt;&lt;br&gt;
-You are welcome to use this library for commercial purposes. For attribution, we ask that when you begin to sell your device using our footprint, you email us with a link to the product being sold. We want bragging rights that we helped (in a very small part) to create your 8th world wonder. We would like the opportunity to feature your device on our homepage.</description>
-<packages>
-</packages>
-<symbols>
-<symbol name="DGND">
-<wire x1="-1.905" y1="0" x2="1.905" y2="0" width="0.254" layer="94"/>
-<text x="-2.54" y="-2.54" size="1.778" layer="96">&gt;VALUE</text>
-<pin name="GND" x="0" y="2.54" visible="off" length="short" direction="sup" rot="R270"/>
-</symbol>
-</symbols>
-<devicesets>
-<deviceset name="GND" prefix="GND">
-<description>&lt;b&gt;SUPPLY SYMBOL&lt;/b&gt;</description>
-<gates>
-<gate name="1" symbol="DGND" x="0" y="0"/>
-</gates>
-<devices>
-<device name="">
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-</devicesets>
-</library>
 </libraries>
 <attributes>
 </attributes>
@@ -1222,7 +1189,6 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="JP1" library="pinhead" deviceset="PINHD-1X2" device=""/>
 <part name="GND2" library="supply1" deviceset="GND" device=""/>
 <part name="PS" library="con-hirose-df13" deviceset="DF13-4P-1.25" device="DSA"/>
-<part name="GND3" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="POW_COM_USB" library="BACKPLANE" deviceset="T2I" device=""/>
 <part name="JP3" library="pinhead" deviceset="PINHD-1X2" device=""/>
 <part name="POW_COM_I2C" library="BACKPLANE" deviceset="T2I" device=""/>
@@ -1231,7 +1197,6 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <sheets>
 <sheet>
 <plain>
-<text x="195.58" y="200.66" size="7.62" layer="91">debugging pins</text>
 <text x="208.28" y="88.9" size="7.62" layer="91">Blue tooth</text>
 <text x="104.14" y="116.84" size="7.62" layer="91">Cammera tube</text>
 <text x="20.32" y="198.12" size="7.62" layer="91">Power box</text>
@@ -1272,7 +1237,6 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <instance part="PS" gate="G$1" x="134.62" y="170.18" smashed="yes" rot="R270">
 <attribute name="NAME" x="139.7" y="172.085" size="1.778" layer="95" rot="R270"/>
 </instance>
-<instance part="GND3" gate="1" x="231.14" y="180.34"/>
 <instance part="POW_COM_USB" gate="G$1" x="38.1" y="167.64" smashed="yes" rot="R180">
 <attribute name="NAME" x="38.1" y="170.18" size="1.778" layer="95" rot="R180"/>
 </instance>
@@ -1461,10 +1425,6 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <pinref part="BT_SIGNAL" gate="G$1" pin="3"/>
 <wire x1="220.98" y1="68.58" x2="220.98" y2="76.2" width="0.1524" layer="91"/>
 <label x="220.98" y="68.58" size="1.778" layer="95" rot="R90"/>
-</segment>
-<segment>
-<wire x1="231.14" y1="190.5" x2="231.14" y2="182.88" width="0.1524" layer="91"/>
-<pinref part="GND3" gate="1" pin="GND"/>
 </segment>
 <segment>
 <pinref part="SC1" gate="G$1" pin="3"/>
@@ -1713,10 +1673,6 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <wire x1="132.08" y1="55.88" x2="132.08" y2="60.96" width="0.1524" layer="91"/>
 <label x="132.08" y="55.88" size="1.778" layer="95" rot="R90"/>
 </segment>
-<segment>
-<wire x1="228.6" y1="190.5" x2="228.6" y2="182.88" width="0.1524" layer="91"/>
-<label x="205.74" y="182.88" size="1.778" layer="95"/>
-</segment>
 </net>
 <net name="5V_BT_LED" class="0">
 <segment>
@@ -1769,7 +1725,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <pinref part="POW_COM_USB" gate="G$1" pin="1"/>
 <pinref part="JP3" gate="G$1" pin="1"/>
 <wire x1="35.56" y1="144.78" x2="35.56" y2="154.94" width="0.1524" layer="91"/>
-<label x="33.02" y="154.94" size="1.778" layer="95" rot="R270"/>
+<label x="33.02" y="157.48" size="1.778" layer="95" rot="R270"/>
 </segment>
 </net>
 <net name="POW_D-" class="0">
@@ -1777,7 +1733,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <pinref part="POW_COM_USB" gate="G$1" pin="2"/>
 <pinref part="JP3" gate="G$1" pin="2"/>
 <wire x1="33.02" y1="144.78" x2="33.02" y2="154.94" width="0.1524" layer="91"/>
-<label x="30.48" y="154.94" size="1.778" layer="95" rot="R270"/>
+<label x="30.48" y="157.48" size="1.778" layer="95" rot="R270"/>
 </segment>
 </net>
 </nets>
