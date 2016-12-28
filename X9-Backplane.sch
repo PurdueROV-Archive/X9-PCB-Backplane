@@ -1197,11 +1197,11 @@ Source: &lt;a href="http://www.hirose.co.jp/cataloge_hp/e53600014.pdf"&gt;http:/
 <sheets>
 <sheet>
 <plain>
-<text x="208.28" y="88.9" size="7.62" layer="91">Blue tooth</text>
-<text x="104.14" y="116.84" size="7.62" layer="91">Cammera tube</text>
-<text x="20.32" y="198.12" size="7.62" layer="91">Power box</text>
-<text x="101.6" y="195.58" size="7.62" layer="91">Pressure Sensor</text>
-<text x="25.4" y="101.6" size="7.62" layer="91">Sonar</text>
+<text x="208.28" y="88.9" size="7.62" layer="97">Blue tooth</text>
+<text x="104.14" y="116.84" size="7.62" layer="97">Cammera tube</text>
+<text x="20.32" y="198.12" size="7.62" layer="97">Power box</text>
+<text x="101.6" y="195.58" size="7.62" layer="97">Pressure Sensor</text>
+<text x="25.4" y="101.6" size="7.62" layer="97">Sonar</text>
 </plain>
 <instances>
 <instance part="FRAME2" gate="G$1" x="0" y="0"/>
