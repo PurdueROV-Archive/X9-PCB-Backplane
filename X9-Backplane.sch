@@ -1710,14 +1710,14 @@ Source: &lt;a href="http://www.hirose.co.jp/cataloge_hp/e53600014.pdf"&gt;http:/
 </net>
 <net name="TX_BT" class="0">
 <segment>
-<pinref part="U$1" gate="G$1" pin="20"/>
-<wire x1="373.38" y1="137.16" x2="381" y2="137.16" width="0.1524" layer="91"/>
-<label x="373.38" y="137.16" size="1.778" layer="95"/>
-</segment>
-<segment>
 <pinref part="BT_SIGNAL" gate="G$1" pin="1"/>
 <wire x1="215.9" y1="68.58" x2="215.9" y2="76.2" width="0.1524" layer="91"/>
 <label x="215.9" y="71.12" size="1.778" layer="95" rot="R90"/>
+</segment>
+<segment>
+<pinref part="U$1" gate="G$1" pin="24"/>
+<wire x1="373.38" y1="142.24" x2="381" y2="142.24" width="0.1524" layer="91"/>
+<label x="373.38" y="142.24" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="POW_D+" class="0">
