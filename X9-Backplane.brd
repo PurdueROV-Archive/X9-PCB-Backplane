@@ -197,9 +197,10 @@
 <text x="100.2284" y="38.0746" size="1.27" layer="21">GND_PIEZO</text>
 <text x="69.5706" y="7.8994" size="1.27" layer="21" rot="R90">Cam D+</text>
 <text x="66.8528" y="7.9502" size="1.27" layer="21" rot="R90">Cam D-</text>
-<text x="25.4" y="2.9972" size="1.778" layer="21">Made by:
+<text x="25.3238" y="1.1684" size="1.778" layer="21">Made by:
 Xi Wu, 
-Ryan McBee</text>
+Ryan McBee,
+Luke McBee</text>
 <text x="47.117" y="6.9596" size="1.27" layer="21" rot="R90">Cam D-</text>
 <text x="44.069" y="7.112" size="1.27" layer="21" rot="R90">Cam D+</text>
 <text x="29.4894" y="22.1488" size="1.27" layer="21">GND</text>
@@ -4392,6 +4393,8 @@ Ryan McBee</text>
 <rectangle x1="95.5929" y1="71.5899" x2="96.1263" y2="71.6661" layer="21"/>
 <rectangle x1="94.8309" y1="71.6661" x2="95.8215" y2="71.7423" layer="21"/>
 <text x="89.9922" y="53.7972" size="0.1524" layer="21" font="vector">/home/ryan/Downloads/charmander.bmp</text>
+<wire x1="-0.6096" y1="62.1792" x2="-0.6096" y2="11.811" width="0.4064" layer="20"/>
+<wire x1="-0.6096" y1="11.811" x2="17.907" y2="-6.7056" width="0.4064" layer="20"/>
 </plain>
 <libraries>
 <library name="T2I5P">
@@ -5046,8 +5049,8 @@ Please make sure your boards conform to these design rules.</description>
 <vertex x="34.29" y="98.7552"/>
 <vertex x="88.3666" y="98.8314"/>
 <vertex x="124.1806" y="63.0174"/>
-<vertex x="121.666" y="11.938"/>
-<vertex x="79.8068" y="-17.399"/>
+<vertex x="122.5042" y="11.0236"/>
+<vertex x="97.8662" y="-15.875"/>
 <vertex x="29.5148" y="-17.399"/>
 <vertex x="-0.762" y="11.938"/>
 </polygon>
